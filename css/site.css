@@ -1,3 +1,16 @@
 :root {
-    
+    --yellow-color: #FFCF00;
+    --red-color: #D01012;
+    --green-color: green;
+    --blue-color: blue;
+    --black-color: black;
+    --white-color: #fff;
+}
+
+/*
+    Eksempel på hvordan man bruker variablene definert ovenfor
+*/
+
+h1 {
+    background-color: var(--yellow-color);
 }
