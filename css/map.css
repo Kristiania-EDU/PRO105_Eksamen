@@ -5,13 +5,13 @@
 #map-container{
     display: flex;
     justify-content: center;
-    border: 2px red solid;
+    /*border: 2px red solid;*/
     height: 150vh;
 }
 
 #map{
     position: absolute;
-    height: 700px;
+    height: 70%;
     top: 20%;
     box-shadow: 0 5px 20px;
     border-radius: 1%;
