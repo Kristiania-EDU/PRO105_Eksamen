@@ -1,17 +1,19 @@
 #body{
-    
+    background-color: red;
 }
 
 #map-container{
     display: flex;
-    justify-content: end;
-    align-content: flex-end;
-    border: 2px red solid;
-    height: 98vh;
+    justify-content: center;
+    /*border: 2px red solid;*/
+    height: 150vh;
 }
 
 #map{
-    height: 700px;
+    position: absolute;
+    height: 70%;
+    top: 20%;
+    box-shadow: 0 5px 20px;
     border-radius: 1%;
 
 }
