@@ -1,3 +1,7 @@
+body{
+    
+}
+
 #map-title{
     position: absolute;
     display: flex;
@@ -7,11 +11,11 @@
 #map-container{
     display: flex;
     justify-content: center;
-    /*border: 2px red solid;*/
-    height: 150vh;
+    border: 2px red solid;
+    height: 190vh;
 }
 
 #map{
-    position: absolute;
+
     /*height: 70%;*/
 }
