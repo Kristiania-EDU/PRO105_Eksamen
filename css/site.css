@@ -9,8 +9,9 @@
 
 /*
     Eksempel på hvordan man bruker variablene definert ovenfor
+
+    h1 {
+        background-color: var(--yellow-color);
+    }
 */
 
-h1 {
-    background-color: var(--yellow-color);
-}
