@@ -23,6 +23,11 @@ ul {
     width: 19%;
     overflow-y: scroll;
     bottom: 0;
+    scrollbar-width: none;
+}
+/* Hides scrollbar for Chrome, Safari and Opera */
+#locations::-webkit-scrollbar{
+    display: hidden;
 }
 
 .content{
