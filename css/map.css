@@ -1,5 +1,5 @@
 body{
-    background-color: #D01012;
+
 }
 
 ul {
@@ -12,7 +12,7 @@ ul {
     justify-content: center;
     align-content: flex-start;
     width: 200px;
-    color: white;
+
 }
 
 #locations{
@@ -33,7 +33,7 @@ ul {
 .content{
     margin: 10px;
     padding: 5px;
-    background-color: #d1ab00;
+    background-color: #FFCF00;
     border-radius: 5px;
 }
 
@@ -62,5 +62,5 @@ ul {
 }
 
 .content:hover{
-    background-color: #FFCF00;
+    background-color: #ffe159;
 }
