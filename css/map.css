@@ -1,5 +1,7 @@
-#body{
-    background-color: brown;
+#map-title{
+    position: absolute;
+    display: flex;
+    justify-content: center;
 }
 
 #map-container{
@@ -11,9 +13,5 @@
 
 #map{
     position: absolute;
-    height: 70%;
-    top: 20%;
-    box-shadow: 0 5px 20px;
-    border-radius: 1%;
-
+    /*height: 70%;*/
 }
