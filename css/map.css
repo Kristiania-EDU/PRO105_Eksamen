@@ -1,21 +1,77 @@
-body{
-    
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#locations-title{
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    width: 200px;
+
+}
+
+.lego-brick-img{
+    position: absolute;
+    width: 65px;
+}
+
+.lego-brick-img:hover{
+    transform: translateX(-25%) translateY(-25%);
+    width: 200px;
+
+}
+
+
+#locations{
+    display: flex;
+    position: absolute;
+    padding: 0;
+    top: 12.7%;
+    width: 19%;
+    overflow-y: scroll;
+    bottom: 0;
+}
+/* Hides scrollbar for Chrome, Safari and Opera */
+#locations::-webkit-scrollbar{
+    display: hidden;
+}
+
+.content{
+    margin: 10px;
+    padding: 5px;
+    background-color: #FFCF00;
+    border-radius: 5px;
 }
 
 #map-title{
-    position: absolute;
     display: flex;
+    position: absolute;
     justify-content: center;
+    width: 100%;
 }
 
-#map-container{
+#map-img{
     display: flex;
-    justify-content: center;
-    border: 2px red solid;
-    height: 190vh;
+    justify-content: end;
+    width: 81%;
+}
+
+.container{
+    display: flex;
+    justify-content: end;
+    width: 100%;
 }
 
 #map{
 
-    /*height: 70%;*/
+    height: 100%;
+}
+
+.content:hover{
+    background-color: #ffe159;
+}
+
+.lego-brick-img .content:hover{
+    background-color: #ffe159;
 }
