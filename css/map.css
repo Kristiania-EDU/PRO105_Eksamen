@@ -72,6 +72,6 @@ ul {
     background-color: #ffe159;
 }
 
-.lego-brick-img .content:hover{
-    background-color: #ffe159;
+.content:hover ~ .lego-brick-img{
+    width: 100px;
 }
