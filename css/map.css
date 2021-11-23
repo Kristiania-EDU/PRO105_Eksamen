@@ -11,6 +11,18 @@ ul {
 
 }
 
+.lego-brick-img{
+    position: absolute;
+    width: 65px;
+}
+
+.lego-brick-img:hover{
+    transform: translateX(-25%) translateY(-25%);
+    width: 200px;
+
+}
+
+
 #locations{
     display: flex;
     position: absolute;
@@ -57,5 +69,9 @@ ul {
 }
 
 .content:hover{
+    background-color: #ffe159;
+}
+
+.lego-brick-img .content:hover{
     background-color: #ffe159;
 }
