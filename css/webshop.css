@@ -19,7 +19,6 @@
 
 input {
     padding: 2px 6px;
-    width: 100%;
     border: 1px solid #dfdfdf;
 }
 
@@ -82,7 +81,7 @@ input.search {
 
 .lego-brick .header {
     position: absolute;
-    top: -9px;
+    top: -10px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -109,6 +108,20 @@ input.search {
 
 .lego-brick:hover > .header .circle {
     background-color: var(--yellow-color);
+}
+
+.lego-brick.transparent,
+.lego-brick.transparent .header .circle {
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+}
+
+.lego-brick.transparent:hover,
+.lego-brick.transparent:hover .header .circle {
+    background-color: var(--white-color);
+    border: none;
+    color: var(--black-color);
 }
 
 .lego-brick.red,
@@ -153,6 +166,7 @@ input.search {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 }
 
 .popup:target {
@@ -160,16 +174,23 @@ input.search {
     opacity: 1;
 }
 
-.popup .content {
+.popup .content-wrapper {
     background-color: var(--white-color);
     display: flex;
     flex-direction: column;
+    min-width: 400px;
+    border-radius: 5px;
+}
+
+.popup .content {
+    padding: 1em;
 }
 
 .popup .header {
     display: flex;
     flex-direction: column;
     padding: .7em;
+    border-bottom: 1px solid #dfdfdf;
 }
 
 .popup .header > h3 {
@@ -179,7 +200,7 @@ input.search {
 .popup .footer {
     display: flex;
     padding: .5em .2em;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .popup .footer .btn {
@@ -200,6 +221,14 @@ input.search {
 .filter-container .filter-items {
     flex-direction: column;
     padding: .5em;
+}
+
+.filter-item {
+    display: flex;
+}
+
+.filter-item > *:not(:last-child) {
+    margin-right: 5px;
 }
 
 /* Shoppingcart */
@@ -262,6 +291,9 @@ input.search {
     margin-top: 10px;
 }
 
+.item-counter input {
+    width: 100%;
+}
 
 /* End shoppingcart */
 
@@ -287,6 +319,13 @@ header .content {
     justify-content: center;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.45);
+}
+
+header .lego-brick {
+    text-transform: uppercase;
+    width: 250px;
+    height: 50px;
+    margin-top: 10px;
 }
 
 header h1 {
@@ -447,12 +486,4 @@ header .cta:hover {
 
 section > .content {
     padding: 2em;
-}
-
-.filter-items {
-    position: relative;
-}
-
-.filter-item div {
-    position: absolute;
 }
