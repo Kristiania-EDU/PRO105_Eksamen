@@ -32,7 +32,7 @@
                 </div>
 
                 <ul class="items">
-                    <li class="item webshop-item">
+                    <li class="item">
                         <div class="content ">
                             <img src="images/webshop/starwars_kit.jpg" />
                             <h3>Starwars</h3>
@@ -41,12 +41,12 @@
                         </div>
                         <div class="footer item-counter">
                             <input class="input" type="number" value="1" />
-                            <span class="btn btn-light">+</span>
-                            <span class="btn btn-light">-</span>
+                            <button class="btn btn-success">+</button>
+                            <button class="btn btn-danger">-</button>
                         </div>
                     </li>
 
-                    <li class="item webshop-item">
+                    <li class="item">
                         <div class="content">
                             <img src="images/webshop/spiderman_kit.jpeg" />
                             <h3>Spiderman</h3>
@@ -55,19 +55,32 @@
                         </div>
                         <div class="footer item-counter">
                             <input class="input" type="number" value="1" />
-                            <span class="btn btn-light">+</span>
-                            <span class="btn btn-light">-</span>
+                            <button class="btn btn-success">+</button>
+                            <button class="btn btn-danger">-</button>
                         </div>
                     </li>
                 </ul>
 
                 <div class="footer">
-                    <label>Totalt: <span>825,-</span></label>
+                    <table class="summary">
+                        <tbody>
+                            <tr>
+                                <td scope="row">Totalt u/mva</td>
+                                <td>825,-</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Totalt m/mva</td>
+                                <td>925,-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <button class="btn btn-primary">Fullfør kjøp</button>
                 </div>
             </div>
         </div>
     </nav>
-
 
     <div class="container">
         <header class="content-container">
@@ -75,7 +88,25 @@
                 <h1>Velkommen til vår nettbutikk!</h1>
                 <p>Her kan du kjøpe alt fra lego til klær</p>
                 <a class="cta" href="#categories">Utforsk</a>
+
+
+                <div class="lego-brick">
+                    <div class="header">
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                    </div>
+                    <div class="content">
+                        <button>Kjøp</button>
+                    </div>
+                </div>
+
+
             </div>
+
+
+
         </header>
 
         <div id="categories" class="categories content-container">
@@ -143,42 +174,136 @@
 
 
                     <ul class="items webshop-items">
-                        <li class="item">
+                        <li class="item webshop-item">
                             <div class="content">
                                 <img src="images/webshop/starwars_kit.jpg" />
                                 <h3>Starwars</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                 <span>NOK 369,-</span>
                             </div>
+                            <div class="footer">
+                                <button class="btn btn-primary">
+                                    <img src="images/webshop/shopping_cart.png" alt="Legg til i handlekurv" />
+                                    <span>Legg til i handlekurv</span>
+                                </button>
+                            </div>
                         </li>
-                        <li class="item">
+                        <li class="item webshop-item">
                             <div class="content">
                                 <img src="images/webshop/spiderman_kit.jpeg" />
                                 <h3>Spiderman</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                 <span>NOK 456,-</span>
                             </div>
+                            <div class="footer">
+                                <button class="btn btn-primary">
+                                    <img src="images/webshop/shopping_cart.png" alt="Legg til i handlekurv" />
+                                    <span>Legg til i handlekurv</span>
+                                </button>
+                            </div>
                         </li>
-                        <li class="item">
+                        <li class="item webshop-item">
                             <div class="content">
                                 <img src="images/webshop/classic_kit.jpg" />
                                 <h3>Klassisk</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                 <span>NOK 249,-</span>
                             </div>
+                            <div class="footer">
+                                <button class="btn btn-primary">
+                                    <img src="images/webshop/shopping_cart.png" alt="Legg til i handlekurv" />
+                                    <span>Legg til i handlekurv</span>
+                                </button>
+                            </div>
                         </li>
-                        <li class="item">
+                        <li class="item webshop-item">
                             <div class="content">
                                 <img src="images/webshop/minecraft_kit.jpg" />
                                 <h3>Minecraft</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                 <span>NOK 334,-</span>
                             </div>
+                            <div class="footer">
+                                <button class="btn btn-primary">
+                                    <img src="images/webshop/shopping_cart.png" alt="Legg til i handlekurv" />
+                                    <span>Legg til i handlekurv</span>
+                                </button>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </section>
 
+            <section class="category clothing">
+                <div class="content">
+                    <div class="header">
+                        <h1>Spill - PS4</h1>
+
+                        <a class="filter" href="#filterPopup1">
+                            <img class="icon" src="images/webshop/filter_icon.png">
+                        </a>
+                    </div>
+
+                    <ul class="items webshop-items">
+                        <li class="item webshop-item">
+                            <div class="content">
+                                <img src="images/webshop/spill_1.jpg" />
+                                <h3>City undercover</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
+                                <span>NOK 189,-</span>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-primary">
+                                    <img src="images/webshop/shopping_cart.png" alt="Legg til i handlekurv" />
+                                    <span>Legg til i handlekurv</span>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="item webshop-item">
+                            <div class="content">
+                                <img src="images/webshop/spill_2.jpg" />
+                                <h3>Worlds</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
+                                <span>NOK 234,-</span>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-primary">
+                                    <img src="images/webshop/shopping_cart.png" alt="Legg til i handlekurv" />
+                                    <span>Legg til i handlekurv</span>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="item webshop-item">
+                            <div class="content">
+                                <img src="images/webshop/spill_3.jpg" />
+                                <h3>Jurassic World</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
+                                <span>NOK 229,-</span>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-primary">
+                                    <img src="images/webshop/shopping_cart.png" alt="Legg til i handlekurv" />
+                                    <span>Legg til i handlekurv</span>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="item webshop-item">
+                            <div class="content">
+                                <img src="images/webshop/spill_4.jpg" />
+                                <h3>Super Heroes</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
+                                <span>NOK 239,-</span>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-primary">
+                                    <img src="images/webshop/shopping_cart.png" alt="Legg til i handlekurv" />
+                                    <span>Legg til i handlekurv</span>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
             <section class="category clothing">
                 <div class="content">
@@ -191,48 +316,66 @@
                     </div>
 
                     <ul class="items webshop-items">
-                        <li class="item">
+                        <li class="item webshop-item">
                             <div class="content">
                                 <img src="images/webshop/clothing_tshirt.jpg" />
                                 <h3>T-skjorte</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                 <span>NOK 189,-</span>
                             </div>
+                            <div class="footer">
+                                <button class="btn btn-primary">
+                                    <img src="images/webshop/shopping_cart.png" alt="Legg til i handlekurv" />
+                                    <span>Legg til i handlekurv</span>
+                                </button>
+                            </div>
                         </li>
-                        <li class="item">
+                        <li class="item webshop-item">
                             <div class="content">
                                 <img src="images/webshop/clothing_tshirt_2.jpg" />
                                 <h3>T-skjorte</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                 <span>NOK 234,-</span>
                             </div>
+                            <div class="footer">
+                                <button class="btn btn-primary">
+                                    <img src="images/webshop/shopping_cart.png" alt="Legg til i handlekurv" />
+                                    <span>Legg til i handlekurv</span>
+                                </button>
+                            </div>
                         </li>
-                        <li class="item">
+                        <li class="item webshop-item">
                             <div class="content">
                                 <img src="images/webshop/clothing_tshirt.jpg" />
                                 <h3>T-skjorte</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                 <span>NOK 229,-</span>
                             </div>
+                            <div class="footer">
+                                <button class="btn btn-primary">
+                                    <img src="images/webshop/shopping_cart.png" alt="Legg til i handlekurv" />
+                                    <span>Legg til i handlekurv</span>
+                                </button>
+                            </div>
                         </li>
-                        <li class="item">
+                        <li class="item webshop-item">
                             <div class="content">
                                 <img src="images/webshop/clothing_tshirt_2.jpg" />
                                 <h3>T-skjorte</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                 <span>NOK 239,-</span>
                             </div>
+                            <div class="footer">
+                                <button class="btn btn-primary">
+                                    <img src="images/webshop/shopping_cart.png" alt="Legg til i handlekurv" />
+                                    <span>Legg til i handlekurv</span>
+                                </button>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </section>
-
-
         </div>
-
-
-
-
     </div>
 </body>
 
