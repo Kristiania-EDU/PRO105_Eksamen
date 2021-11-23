@@ -3,16 +3,152 @@
     padding: 0;
 }
 
+.content-container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .btn {
     border: 1px solid;
     padding: .3em .7em;
     font-size: 1.1em;
+    cursor: pointer;
+    background: transparent;
+}
+
+input {
+    padding: 2px 6px;
+    border: 1px solid #dfdfdf;
 }
 
 input.search {
     border: 1px solid #dfdfdf;
     padding: .5em;
 }
+
+.footer {
+    display: flex;
+    padding: .75em;
+    border-top: 1px solid #dfdfdf;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.footer > * {
+    margin: 3px;
+}
+
+.btn-success {
+    border: 1px solid var(--green-color);
+    color: var(--green-color);
+}
+
+.btn-danger {
+    border: 1px solid var(--red-color);
+    color: var(--red-color);
+}
+
+.btn-danger:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+
+.btn-success:hover {
+    background-color: var(--green-color);
+    color: var(--white-color);
+}
+
+
+/* Legobrick */
+.lego-brick {
+    width: 150px;
+    height: 38px;
+    position: relative;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.lego-brick * {
+    cursor: pointer;
+}
+
+.lego-brick .header {
+    position: absolute;
+    top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 10px;
+    overflow: hidden;
+}
+
+.lego-brick .header .circle {
+    width: 20px;
+    height: 35px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.lego-brick .header .circle:not(:last-child) {
+    margin-right: 5px;
+}
+
+.lego-brick:hover {
+    background-color: var(--yellow-color);
+}
+
+.lego-brick:hover > .header .circle {
+    background-color: var(--yellow-color);
+}
+
+.lego-brick.transparent,
+.lego-brick.transparent .header .circle {
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+}
+
+.lego-brick.transparent:hover,
+.lego-brick.transparent:hover .header .circle {
+    background-color: var(--white-color);
+    border: none;
+    color: var(--black-color);
+}
+
+.lego-brick.red,
+.lego-brick.red .header .circle {
+    background-color: var(--red-color);
+}
+
+.lego-brick.red:hover,
+.lego-brick.red:hover .header .circle {
+    background-color: var(--yellow-color);
+}
+
+.lego-brick.yellow,
+.lego-brick.yellow .header .circle {
+    background-color: var(--yellow-color);
+}
+
+.lego-brick.yellow:hover,
+.lego-brick.yellow:hover .header .circle {
+    background-color: var(--green-color);
+}
+
+.lego-brick.green,
+.lego-brick.green .header .circle {
+    background-color: var(--green-color);
+}
+
 
 /* Popup */
 .popup {
@@ -30,6 +166,7 @@ input.search {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 }
 
 .popup:target {
@@ -37,16 +174,23 @@ input.search {
     opacity: 1;
 }
 
-.popup .content {
+.popup .content-wrapper {
     background-color: var(--white-color);
     display: flex;
     flex-direction: column;
+    min-width: 400px;
+    border-radius: 5px;
+}
+
+.popup .content {
+    padding: 1em;
 }
 
 .popup .header {
     display: flex;
     flex-direction: column;
     padding: .7em;
+    border-bottom: 1px solid #dfdfdf;
 }
 
 .popup .header > h3 {
@@ -56,7 +200,7 @@ input.search {
 .popup .footer {
     display: flex;
     padding: .5em .2em;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .popup .footer .btn {
@@ -79,6 +223,14 @@ input.search {
     padding: .5em;
 }
 
+.filter-item {
+    display: flex;
+}
+
+.filter-item > *:not(:last-child) {
+    margin-right: 5px;
+}
+
 /* Shoppingcart */
 .shopping-cart {
     position: absolute;
@@ -86,6 +238,13 @@ input.search {
     right: 20px;
     width: 50px;
     cursor: pointer;
+    z-index: 10;
+}
+
+.shopping-cart .header {
+    margin-bottom: .5em;
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 5px;
 }
 
 .shopping-cart img {
@@ -100,19 +259,40 @@ input.search {
     display: none;
     background-color: #fff;
     padding: 1em 1.5em;
-    width: 330px;
+    min-width: 250px;
     position: absolute;
     right: 10px;
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, .15) 2px 5px 9px 4px;
 }
 
 .shopping-cart ul {
     flex-direction: column;
 }
 
-.shopping-cart li {
+.shopping-cart .item {
     display: block;
     margin: .5em 0;
+    width: 250px;
+}
+
+.shopping-cart .webshop-item img {
+    width: 80%;
+}
+
+.shopping-cart > .content > .footer {
+    flex-direction: column;
+}
+
+.shopping-cart > .content > .footer .btn-primary {
+    background-color: var(--yellow-color);
+    border: none;
+    color: var(--black-color);
+    margin-top: 10px;
+}
+
+.item-counter input {
+    width: 100%;
 }
 
 /* End shoppingcart */
@@ -139,6 +319,13 @@ header .content {
     justify-content: center;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.45);
+}
+
+header .lego-brick {
+    text-transform: uppercase;
+    width: 250px;
+    height: 50px;
+    margin-top: 10px;
 }
 
 header h1 {
@@ -171,20 +358,26 @@ header .cta:hover {
 
 .categories {
     height: 100%;
+    padding-top: 30px;
+}
+
+.category {
+    margin: 1em 0;
 }
 
 .category h1 {
     margin-bottom: .4em; 
 }
 
-.category .header {
+.category > .header {
     border-bottom: 1px solid #dfdfdf;
     margin-bottom: 1.5em;
+    padding: .5em 1em;
     display: flex;
     justify-content: space-between;
 }
 
-.category .header .filter .icon{
+.category > .header .filter .icon{
     background: url(images/webshop/filter_icon.png);
     width: 25px;
     cursor: pointer;
@@ -195,62 +388,102 @@ header .cta:hover {
     display: flex;
     gap: 1em;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .item {
-    width: 290px;    
     border-radius: .5em;
     border: 1px solid #f0f0f0;
     font-size: 14px;
-    cursor: pointer;
+    margin: .5em;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: .5s;
 }
 
-.item:hover {
-    background-color: #fbfbfb;
+/* Webshop item */
+
+.webshop-item {
+    cursor: pointer;
+    width: 290px;    
+    min-width: 290px;
+    flex-basis: 22%;
 }
 
-.item .content {
-    color: var(--black-color);
-    height: 100%;
+.webshop-items .item:hover {
+    box-shadow: 
+    rgba(99, 99, 99, 0.2) 0px 2px 18px 5px,
+        rgba(255, 207, 0, .2) 0px 5px, 
+        rgba(255, 207, 0, .15) 0px 10px, 
+        rgba(255, 207, 0, .1) 0px 15px, 
+        rgba(255, 207, 0, .05) 0px 20px;
+}
+
+.webshop-item .footer {
+    margin-top: 0;
+    padding: .5em;
+    padding-top: 1em;
+}
+
+.webshop-item .footer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    padding: 1.5em;
+    background-color: var(--yellow-color);
+    color: var(--gray-color);
+    border: none;
+}
+
+.webshop-item .footer button img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.webshop-item .lego-brick {
+    width: 100%;
+}
+
+.webshop-item .lego-brick img {
+    width: 25px;
+}
+
+/*Item shared styling */
+.item {
+    color: var(--black-color);    
     display: flex;
     flex-direction: column;
 }
 
-.item img {
+.item > .content {
+    height: 100%;
+    width: 100%;
+    padding: 1.5em;
+    padding-bottom: .75em;
+    display: flex;
+    flex-direction: column;
+}
+
+.item > .content img {
     width: 100%;
     margin-bottom: auto;
 }
 
-.item h3 {
+.item .content h3 {
     margin-top: .5em;
     margin-bottom: .3em;
 }
 
-.item p {
+.item .content p {
     margin-bottom: .5em;
 }
 
-
-.item span {
+.item .content span {
     color: var(--gray-color);
     font-weight: bold;
     align-self: flex-end;
+    margin-top: 10px;
 }
-
-
 
 section > .content {
     padding: 2em;
-}
-
-.filter-items {
-    position: relative;
-}
-
-.filter-item div {
-    position: absolute;
 }
