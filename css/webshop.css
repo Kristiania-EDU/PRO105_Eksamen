@@ -3,15 +3,38 @@
     padding: 0;
 }
 
+.content-container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .btn {
     border: 1px solid;
     padding: .3em .7em;
     font-size: 1.1em;
 }
 
+input {
+    padding: 2px 6px;
+    width: 100%;
+}
+
 input.search {
     border: 1px solid #dfdfdf;
     padding: .5em;
+}
+
+.footer {
+    display: flex;
+    padding: .75em;
+    border-top: 1px solid #dfdfdf;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.footer > * {
+    margin: 3px;
 }
 
 /* Popup */
@@ -86,6 +109,13 @@ input.search {
     right: 20px;
     width: 50px;
     cursor: pointer;
+    z-index: 10;
+}
+
+.shopping-cart .header {
+    margin-bottom: .5em;
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 5px;
 }
 
 .shopping-cart img {
@@ -100,20 +130,27 @@ input.search {
     display: none;
     background-color: #fff;
     padding: 1em 1.5em;
-    width: 330px;
+    min-width: 250px;
     position: absolute;
     right: 10px;
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, .15) 2px 5px 9px 4px;
 }
 
 .shopping-cart ul {
     flex-direction: column;
 }
 
-.shopping-cart li {
+.shopping-cart .webshop-item {
     display: block;
     margin: .5em 0;
+    width: 250px;
 }
+
+.shopping-cart .webshop-item img {
+    width: 80%;
+}
+
 
 /* End shoppingcart */
 
@@ -195,7 +232,7 @@ header .cta:hover {
     display: flex;
     gap: 1em;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .item {
@@ -204,11 +241,36 @@ header .cta:hover {
     border: 1px solid #f0f0f0;
     font-size: 14px;
     cursor: pointer;
+    margin: .5em;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: .5s;
 }
 
 .item:hover {
-    background-color: #fbfbfb;
+    background-color: #ffcf00;        
+}
+
+.webshop-items .item:hover {
+    position: relative;
+    animation-name: item-jump;
+    animation-duration: .5s;
+    bottom: 10px;
+    box-shadow: 
+        rgba(255, 207, 0, .25) 0px 5px, 
+        rgba(255, 207, 0, .2) 0px 10px, 
+        rgba(255, 207, 0, .15) 0px 15px, 
+        rgba(255, 207, 0, .1) 0px 20px, 
+        rgba(255, 207, 0, .05) 0px 25px;
+}
+
+@keyframes item-jump {
+    from {
+        bottom: 0px;
+    }
+
+    to {
+        bottom: 10px;
+    }
 }
 
 .item .content {
