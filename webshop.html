@@ -27,32 +27,50 @@
             <img src="/images/webshop/shopping_cart.png" />
 
             <div class="content">
-                <ul>
-                    <li class="item">
-                        <div class="content">
+                <div class="header">
+                    <h1>Handlekurv</h1>
+                </div>
+
+                <ul class="items">
+                    <li class="item webshop-item">
+                        <div class="content ">
                             <img src="images/webshop/starwars_kit.jpg" />
                             <h3>Starwars</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                             <span>NOK 369,-</span>
                         </div>
+                        <div class="footer item-counter">
+                            <input class="input" type="number" value="1" />
+                            <span class="btn btn-light">+</span>
+                            <span class="btn btn-light">-</span>
+                        </div>
                     </li>
 
-                    <li class="item">
+                    <li class="item webshop-item">
                         <div class="content">
                             <img src="images/webshop/spiderman_kit.jpeg" />
                             <h3>Spiderman</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                             <span>NOK 456,-</span>
                         </div>
+                        <div class="footer item-counter">
+                            <input class="input" type="number" value="1" />
+                            <span class="btn btn-light">+</span>
+                            <span class="btn btn-light">-</span>
+                        </div>
                     </li>
                 </ul>
+
+                <div class="footer">
+                    <label>Totalt: <span>825,-</span></label>
+                </div>
             </div>
         </div>
     </nav>
 
 
     <div class="container">
-        <header>
+        <header class="content-container">
             <div class="content">
                 <h1>Velkommen til vår nettbutikk!</h1>
                 <p>Her kan du kjøpe alt fra lego til klær</p>
@@ -60,7 +78,7 @@
             </div>
         </header>
 
-        <div id="categories" class="categories">
+        <div id="categories" class="categories content-container">
 
             <section id="legoSection" class="lego category">
                 <div class="content">
@@ -124,7 +142,7 @@
                     </div>
 
 
-                    <ul class="items">
+                    <ul class="items webshop-items">
                         <li class="item">
                             <div class="content">
                                 <img src="images/webshop/starwars_kit.jpg" />
@@ -172,7 +190,7 @@
                         </a>
                     </div>
 
-                    <ul class="items">
+                    <ul class="items webshop-items">
                         <li class="item">
                             <div class="content">
                                 <img src="images/webshop/clothing_tshirt.jpg" />
