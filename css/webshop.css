@@ -243,7 +243,7 @@ input.search {
 
 .shopping-cart .header {
     margin-bottom: .5em;
-    border-bottom: 1px solid #dfdfdf;
+    /* border-bottom: 1px solid #dfdfdf; */
     padding-bottom: 5px;
 }
 
