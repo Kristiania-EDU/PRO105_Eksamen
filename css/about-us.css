@@ -1,0 +1,57 @@
+body{
+    overflow-y: scroll;
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#quote{
+    /* font-family: lego? */
+    font-style: italic;
+    font-size: 40px;
+    color: black; 
+    text-shadow: 3px 2px rgb(124, 108, 108); 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative; 
+    top: 170px;
+}
+
+.historyText{
+    font-style: italic; 
+    font-size: 15px;
+    line-height: 1.6;
+    position: relative;  
+    top: 420px;
+    left: 650px;
+    right: 10px;
+}
+
+#historyImg{
+    position: relative;  
+    top: 470px;
+    left: 10px;
+    width: 400px;
+}
+
+.locationsText{
+    font-style: italic; 
+    font-size: 15px;
+    line-height: 1.6;
+    position: relative;  
+    top: 820px;
+    right: 650px;
+    left: 10px;
+}
+
+#locationsImg{
+    position: relative;  
+    top: 1000px;
+    left: 800px;
+    width: 350px;
+}
+ 
