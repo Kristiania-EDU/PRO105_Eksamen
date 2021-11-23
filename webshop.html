@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="/css/webshop.css" type="text/css">
     <title>Webshop</title>
 </head>
+
 <body>
 
     <nav>
@@ -20,91 +22,200 @@
             <li><a href="webshop.html" class="active">Webshop</a></li>
             <li><a href="about-us.html">Om oss</a></li>
         </ul>
+
+        <div class="shopping-cart">
+            <img src="/images/webshop/shopping_cart.png" />
+
+            <div class="content">
+                <ul>
+                    <li class="item">
+                        <div class="content">
+                            <img src="images/webshop/starwars_kit.jpg" />
+                            <h3>Starwars</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
+                            <span>NOK 369,-</span>
+                        </div>
+                    </li>
+
+                    <li class="item">
+                        <div class="content">
+                            <img src="images/webshop/spiderman_kit.jpeg" />
+                            <h3>Spiderman</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
+                            <span>NOK 456,-</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+
 
     <div class="container">
         <header>
             <div class="content">
-                <h1>Nettbutikk</h1>
-            </div> 
+                <h1>Velkommen til vår nettbutikk!</h1>
+                <p>Her kan du kjøpe alt fra lego til klær</p>
+                <a class="cta" href="#categories">Utforsk</a>
+            </div>
         </header>
-  
-        <section class="lego">
-            <div class="content">
-                <h1>Lego</h1>
 
-                <ul class="items">
-                    <li class="item">
-                        <div class="content">
-                            <h3>Starwars-pakke</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
-                            <span>630,-</span>
+        <div id="categories" class="categories">
+
+            <section id="legoSection" class="lego category">
+                <div class="content">
+
+                    <div class="header">
+                        <h1>Pakker med lego</h1>
+
+                        <a class="filter" href="#filterPopup1">
+                            <img class="icon" src="images/webshop/filter_icon.png">
+                        </a>
+
+
+                        <div id="filterPopup1" class="popup filter-popup">
+                            <div class="content">
+
+                                <div class="header">
+                                    <h3>Filtre for Lego</h3>
+
+                                    <input class="search" placeholder="Søk..">
+                                </div>
+
+
+                                <div class="filter-container">
+                                    <h3>Kategori</h3>
+
+                                    <ul class="filter-items items">
+                                        <li class="filter-item">
+                                            <div>
+                                                <input type="checkbox" name="minecraft" />
+                                                <label for="minecraft">Minecraft</label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-item">
+                                            <div>
+                                                <input type="checkbox" name="star_wars" />
+                                                <label for="star_wars">Starwars</label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-item">
+                                            <div>
+                                                <input type="checkbox" name="klassisk" />
+                                                <label for="klassisk">Klassisk</label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-item">
+                                            <div>
+                                                <input type="checkbox" name="spiderman" />
+                                                <label for="spiderman">Spiderman</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="footer">
+                                    <a class="btn btn-light" href="#">Lukk</a>
+                                    <a class="btn btn-primary" href="#">Bruk</a>
+                                </div>
+                            </div>
                         </div>
-                    </li>
-                </ul>
 
-            </div>
-        </section>
-  
-        <section class="clothing">
-            <div class="content">
-                <h1>Klær</h1>
-            </div>
-        </section>    
+                    </div>
 
-        <section class="clothing">
-            <div class="content">
-                <h1>Klær</h1>
-            </div>
-        </section>  
 
-        <section class="clothing">
-            <div class="content">
-                <h1>Klær</h1>
-            </div>
-        </section>  
+                    <ul class="items">
+                        <li class="item">
+                            <div class="content">
+                                <img src="images/webshop/starwars_kit.jpg" />
+                                <h3>Starwars</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
+                                <span>NOK 369,-</span>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content">
+                                <img src="images/webshop/spiderman_kit.jpeg" />
+                                <h3>Spiderman</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
+                                <span>NOK 456,-</span>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content">
+                                <img src="images/webshop/classic_kit.jpg" />
+                                <h3>Klassisk</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
+                                <span>NOK 249,-</span>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content">
+                                <img src="images/webshop/minecraft_kit.jpg" />
+                                <h3>Minecraft</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
+                                <span>NOK 334,-</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-        <section class="clothing">
-            <div class="content">
-                <h1>Klær</h1>
-            </div>
-        </section>  
 
-        <section class="clothing">
-            <div class="content">
-                <h1>Klær</h1>
-            </div>
-        </section>  
+            <section class="category clothing">
+                <div class="content">
+                    <div class="header">
+                        <h1>Klær</h1>
 
-        <section class="clothing">
-            <div class="content">
-                <h1>Klær</h1>
-            </div>
-        </section>  
+                        <a class="filter" href="#filterPopup1">
+                            <img class="icon" src="images/webshop/filter_icon.png">
+                        </a>
+                    </div>
 
-        <section class="clothing">
-            <div class="content">
-                <h1>Klær</h1>
-            </div>
-        </section>  
+                    <ul class="items">
+                        <li class="item">
+                            <div class="content">
+                                <img src="images/webshop/clothing_tshirt.jpg" />
+                                <h3>T-skjorte</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
+                                <span>NOK 189,-</span>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content">
+                                <img src="images/webshop/clothing_tshirt_2.jpg" />
+                                <h3>T-skjorte</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
+                                <span>NOK 234,-</span>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content">
+                                <img src="images/webshop/clothing_tshirt.jpg" />
+                                <h3>T-skjorte</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
+                                <span>NOK 229,-</span>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content">
+                                <img src="images/webshop/clothing_tshirt_2.jpg" />
+                                <h3>T-skjorte</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
+                                <span>NOK 239,-</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-        <section class="clothing">
-            <div class="content">
-                <h1>Klær</h1>
-            </div>
-        </section>  
 
-        <section class="clothing">
-            <div class="content">
-                <h1>Klær</h1>
-            </div>
-        </section>  
+        </div>
 
-        <section class="clothing">
-            <div class="content">
-                <h1>Klær</h1>
-            </div>
-        </section>  
+
+
+
     </div>
 </body>
+
 </html>
