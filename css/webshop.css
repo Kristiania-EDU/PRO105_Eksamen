@@ -3,43 +3,6 @@
     padding: 0;
 }
 
-.lego-brick {
-    background-color: var(--red-color);
-    width: 100px;
-    height: 40px;
-    position: relative;
-}
-
-.lego-brick .header {
-    position: absolute;
-    top: -20px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.lego-brick .header .circle {
-
-    width: 20px;
-    height: 35px;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;;
-    background-color: green;
-}
-
-.lego-brick .header .circle:not(:last-child) {
-    margin-right: 5px;
-}
-
-
-.lego-brick .content {
-    position: absolute;
-    top: -10px;
-    background-color: var(--red-color);
-}
-
-
 .content-container {
     max-width: 1400px;
     margin-left: auto;
@@ -95,6 +58,82 @@ input.search {
 .btn-success:hover {
     background-color: var(--green-color);
     color: var(--white-color);
+}
+
+
+/* Legobrick */
+.lego-brick {
+    width: 150px;
+    height: 38px;
+    position: relative;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.lego-brick * {
+    cursor: pointer;
+}
+
+.lego-brick .header {
+    position: absolute;
+    top: -9px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 10px;
+    overflow: hidden;
+}
+
+.lego-brick .header .circle {
+    width: 20px;
+    height: 35px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.lego-brick .header .circle:not(:last-child) {
+    margin-right: 5px;
+}
+
+.lego-brick:hover {
+    background-color: var(--yellow-color);
+}
+
+.lego-brick:hover > .header .circle {
+    background-color: var(--yellow-color);
+}
+
+.lego-brick.red,
+.lego-brick.red .header .circle {
+    background-color: var(--red-color);
+}
+
+.lego-brick.red:hover,
+.lego-brick.red:hover .header .circle {
+    background-color: var(--yellow-color);
+}
+
+.lego-brick.yellow,
+.lego-brick.yellow .header .circle {
+    background-color: var(--yellow-color);
+}
+
+.lego-brick.yellow:hover,
+.lego-brick.yellow:hover .header .circle {
+    background-color: var(--green-color);
+}
+
+.lego-brick.green,
+.lego-brick.green .header .circle {
+    background-color: var(--green-color);
 }
 
 
@@ -280,20 +319,26 @@ header .cta:hover {
 
 .categories {
     height: 100%;
+    padding-top: 30px;
+}
+
+.category {
+    margin: 1em 0;
 }
 
 .category h1 {
     margin-bottom: .4em; 
 }
 
-.category .header {
+.category > .header {
     border-bottom: 1px solid #dfdfdf;
     margin-bottom: 1.5em;
+    padding: .5em 1em;
     display: flex;
     justify-content: space-between;
 }
 
-.category .header .filter .icon{
+.category > .header .filter .icon{
     background: url(images/webshop/filter_icon.png);
     width: 25px;
     cursor: pointer;
@@ -321,20 +366,23 @@ header .cta:hover {
 .webshop-item {
     cursor: pointer;
     width: 290px;    
+    min-width: 290px;
+    flex-basis: 22%;
 }
 
 .webshop-items .item:hover {
     box-shadow: 
-        rgba(255, 207, 0, .25) 0px 5px, 
-        rgba(255, 207, 0, .2) 0px 10px, 
-        rgba(255, 207, 0, .15) 0px 15px, 
-        rgba(255, 207, 0, .1) 0px 20px, 
-        rgba(255, 207, 0, .05) 0px 25px;
+    rgba(99, 99, 99, 0.2) 0px 2px 18px 5px,
+        rgba(255, 207, 0, .2) 0px 5px, 
+        rgba(255, 207, 0, .15) 0px 10px, 
+        rgba(255, 207, 0, .1) 0px 15px, 
+        rgba(255, 207, 0, .05) 0px 20px;
 }
 
 .webshop-item .footer {
     margin-top: 0;
     padding: .5em;
+    padding-top: 1em;
 }
 
 .webshop-item .footer button {
@@ -352,6 +400,14 @@ header .cta:hover {
     margin-right: 10px;
 }
 
+.webshop-item .lego-brick {
+    width: 100%;
+}
+
+.webshop-item .lego-brick img {
+    width: 25px;
+}
+
 /*Item shared styling */
 .item {
     color: var(--black-color);    
@@ -359,7 +415,7 @@ header .cta:hover {
     flex-direction: column;
 }
 
-.item .content {
+.item > .content {
     height: 100%;
     width: 100%;
     padding: 1.5em;
@@ -368,7 +424,7 @@ header .cta:hover {
     flex-direction: column;
 }
 
-.item .content img {
+.item > .content img {
     width: 100%;
     margin-bottom: auto;
 }
