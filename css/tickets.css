@@ -65,7 +65,7 @@
     position: relative;
     width: 1400px;
     height: 1000px; 
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.966);
     box-shadow: 1px 1px 2px black;
     top: 268px;
     display: flex;
