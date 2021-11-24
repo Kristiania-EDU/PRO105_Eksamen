@@ -210,9 +210,9 @@ ul {
     filter: grayscale(0%);
 }
 
-.content:hover ~ .test > .lego-brick-img{
-    transform: translateX(-25%) translateY(-25%);
-    width: 200px;
+.content:hover ~ .destination > .test{
+    transition: 100ms ease-in;
+    opacity: 1;
   }
 
 .lego-preview{
@@ -221,3 +221,16 @@ ul {
 }
 
 /*test*/
+
+.test{
+    z-index: 14;
+    position: fixed;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 10px solid #ca1f08;
+    box-shadow: 0px 3px 10px;
+    transform: translateX(-14%) translateY(-33%);
+    transition: 100ms ease-out;
+    opacity: 0;
+}
