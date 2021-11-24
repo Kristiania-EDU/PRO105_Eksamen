@@ -6,7 +6,6 @@
     font-style: normal;
 }
 
-
 .container {
     width: 100%;
     height: 100%;
@@ -25,9 +24,10 @@
     position: absolute;
     display: flex;
     align-items: center; 
-    background-image: url(/images/Tickets/LegoBrickBackground.jpg);
-    box-shadow: 1px 1px 1px black;
-    border: 1px solid black;
+    background-image: url(/images/Tickets/BannerImg.jpg);
+    background-size: 70%;
+    padding-bottom: 1px;
+    box-shadow: inset 0 -10px 10px -9px #ffffff;
     
 }
 #bannerTextContainer{
@@ -40,26 +40,25 @@
     border-style: solid;
     border-width: 1.5px;
     margin: 0;
-    box-shadow: 2px 2px 5px rgb(0, 0, 0); 
+    box-shadow: .1px .1px 1px rgb(0, 0, 0); 
 }
-#header {
-    font-family: lego;
+#headerTitle {
+    font-family: sans-serif;
     font-weight: bold;
-    letter-spacing: 1px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 45px;
     border-radius: 15px;
     top: -10px;
     position: absolute;
     left: 20px;
 }
-#subHead {
+#subHeadText {
    font-family: sans-serif;
    position: absolute;
    bottom: 10px;
    left: 25px;
    font-size: 12px;
-   color: white;
+   color: rgb(0, 0, 0);
 
 }
 #backgroundContainer {
@@ -68,7 +67,7 @@
     height: 1000px; 
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 1px 2px black;
-    top: 269px;
+    top: 268px;
     display: flex;
     align-self: center;
     align-items: center;
@@ -130,13 +129,17 @@
     align-items: center;
     text-decoration: none;
     color: black;
-    font-size: 15px;
-    font-weight: bold;
-    bottom: 10px;
-    width: 150px;
-    height: 30px;
+    font-size: 18px;
+    font-weight: 520;
+    bottom: 0px;
+    width: 300px;
+    height: 80px;
     background-color: rgb(54, 147, 253);
     box-shadow: 1px 1px 1px black;
+    transform: .2s;
+}
+.button:hover {
+    transform: scale(1.01);
 }
 
 .popup {
@@ -168,6 +171,7 @@
     position: absolute;
     top: 25px;
     align-self: center;
+    text-decoration: underline;
 }
 
 #popup1:target {
@@ -177,6 +181,9 @@
     visibility: visible;
 }
 #popup3:target {
+    visibility: visible;
+}
+#thanks:target{
     visibility: visible;
 }
 .closePopup {
@@ -192,13 +199,56 @@
 
 
 .quantity {
-    display: flex;
     height: 20px;
     width: 20px;
-    align-self: center;
-    margin: 5px;
+    position: relative;
+    display: inline;
+    left: 130px;
+    margin: 6px;
+    bottom: 49px;    
 }
-.labelName {
+
+.labelName{
+    position: relative;
+    display: inline;
+    margin: 9px; 
+    top: 80px;
+}
+
+.popupHead {
+    font-family: sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+}
+
+.dateSelection {
+    position:absolute;
+    top: 150px;
+    left: 10px;
     
+}
+.popBuyBtn {
+    position: absolute;
+    bottom: 40px;
+    left: 320px;
+    padding: 15px;
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(54, 147, 253);
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px black;
+
+}
+
+.success {
+    width: 250px;
+    height: 250px;
+    align-self: center;
+    justify-self: center;
     
 }

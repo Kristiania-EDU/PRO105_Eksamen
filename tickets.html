@@ -25,8 +25,8 @@
         <!--Her legger du ditt design-->
         <div id="banner">
             <div id="bannerTextContainer">
-                <h2 id="header">BILLETTER <br>
-                    <h5 id="subHead">Klargjør besøket og kjøp billetter allerede idag!</h5>
+                <h2 id="headerTitle">BILLETTER <br>
+                    <h5 id="subHeadText">Klargjør besøket og kjøp billetter allerede idag!</h5>
                 </h2>
             </div>
         </div>
@@ -44,6 +44,7 @@
                 <p class="ticketInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in finibus leo.</p>
                 <img class="boxImg" src="/images/Tickets/pass.png"/>
                 <a class="button" id="buyTicketBtn" href="#popup2">Velg Pass</a>
+                
             </div>
             <div class= "ticketBuyBox" id="ticketBox3">
                 <h3 class="ticketName">Gavekort</h3>
@@ -60,29 +61,59 @@
         </div>
         <div id= "popup1" class= "popup">
             <div id= "popupContent">
-                <h2 id=popupTitle>KJØP MEGGGG</h2>
+                <h2 id=popupTitle>Bestill Dagspass</h2>
                 <a class="closePopup" href="#">&times;</a>
-                <label class="labelName" for="barnebillett">barnebillett</label>
-                <input type="number" class="quantity" id="barn" name="barnebillett" min="0" max="100" step="1" value="0"> 
-                <input type="number" class="quantity" id="voksen" name="voksenbillett" min="0" max="100">
+                <h2 class=popupHead>Når vil du besøke oss?</h2>
+                <input class="dateSelection" type="date">
+                <label class="labelName" id="labelNameChild" for="child">Barnebillett</label>
+                <label class="labelName" id="labelNameAdult" for="adult">Voksenbillett</label>
+                <label class="labelName" id="labelNameStudent" for="student">Studentbillett</label>
+                <label class="labelName" id="labelNameSenior" for="senior">Honnørbillett</label>
+                <input type="number" class="quantity" id="child" name="child" min="0" max="100" step="1" value="0"> 
+                <input type="number" class="quantity" id="adult" name="adult" min="0" max="100" step="1" value="0">
+                <input type="number" class="quantity" id="student" name="student" min="0" max="100" step="1" value="0">
+                <input type="number" class="quantity" id="senior" name="senior" min="0" max="100" step="1" value="0">
+                <a class="popBuyBtn" href="#thanks">Bestill</a>
             </div>
         </div>
         <div id= "popup2" class= "popup">
             <div id= "popupContent">
-                <h2 id=popupTitle>Skriv noe spennende her</h2>
+                <h2 id=popupTitle>Sesongkort</h2>
                 <a class="closePopup" href="#">&times;</a>
-                <label class="labelName" for="barnebillett">barnebillett</label>
-                <input type="number" class="quantity" id="barn" name="barnebillett" min="0" max="100" step="1" value="0"> 
-                <input type="number" class="quantity" id="voksen" name="voksenbillett" min="0" max="100">
+                <h2 class=popupHead>Hvem trenger pass?</h2>
+                <label class="labelName" id="labelNameChild" for="child">Sesongkort - Barn</label>
+                <label class="labelName" id="labelNameAdult" for="adult">Sesongkort - Voksen</label>
+                <label class="labelName" id="labelNameStudent" for="student">Sesongkort - student</label>
+                <label class="labelName" id="labelNameSenior" for="senior">Sesongkort - Honnør</label>
+                <input type="number" class="quantity" id="child" name="child" min="0" max="100" step="1" value="0"> 
+                <input type="number" class="quantity" id="adult" name="adult" min="0" max="100" step="1" value="0">
+                <input type="number" class="quantity" id="student" name="student" min="0" max="100" step="1" value="0">
+                <input type="number" class="quantity" id="senior" name="senior" min="0" max="100" step="1" value="0">
+                <a class="popBuyBtn" href="#thanks">Bestill</a>
             </div>
         </div>
         <div id= "popup3" class= "popup">
             <div id= "popupContent">
-                <h2 id=popupTitle>GJØR MERRR!</h2>
+                <h2 id=popupTitle>Bestill Dagspass</h2>
                 <a class="closePopup" href="#">&times;</a>
-                <label class="labelName" for="barnebillett">barnebillett</label>
-                <input type="number" class="quantity" id="barn" name="barnebillett" min="0" max="100" step="1" value="0"> 
-                <input type="number" class="quantity" id="voksen" name="voksenbillett" min="0" max="100">
+                <h2 class=popupHead>Når vil du besøke oss?</h2>
+                <input class="dateSelection" type="date">
+                <label class="labelName" id="labelNameChild" for="child">Gavekort - Barn</label>
+                <label class="labelName" id="labelNameAdult" for="adult">Gavekort - Voksen</label>
+                <label class="labelName" id="labelNameStudent" for="student">Gavekort - student</label>
+                <label class="labelName" id="labelNameSenior" for="senior">Gavekort - Honnør</label>
+                <input type="number" class="quantity" id="child" name="child" min="0" max="100" step="1" value="0"> 
+                <input type="number" class="quantity" id="adult" name="adult" min="0" max="100" step="1" value="0">
+                <input type="number" class="quantity" id="student" name="student" min="0" max="100" step="1" value="0">
+                <input type="number" class="quantity" id="senior" name="senior" min="0" max="100" step="1" value="0">
+                <a class="popBuyBtn" href="#thanks">Bestill</a>
+            </div>
+        </div>
+        <div id="thanks" class= "popup">
+            <div id= "popupContent">
+                <h2 id=popupTitle>Din bestilling er nå registert!</h2>
+                <img class="success" src="images/Tickets/checkmark.png">
+                <a class="closePopup" href="#">&times;</a>
             </div>
         </div>
     </div>
