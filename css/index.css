@@ -12,9 +12,8 @@ display: flex;
 
 #text {
 position: relative;
-color: white;
-left: 530px;
-z-index: 4;
-bottom: 30px;
+color: black;
+
+
 }
 
