@@ -1,9 +1,17 @@
 body {
 background-color: rgb(251,84,84);
+z-index: 2;
 }
 .gif {
 width: 100%;
 height: 84vh;
+z-index: 3;
 
 
+}
+
+.nederstebar{
+background-color: #FFCF00;
+text-align: center;
+z-index: 4;
 }
