@@ -25,10 +25,11 @@ ul {
 
 #locations{
     display: flex;
+    justify-content: center;
     position: absolute;
-    padding: 0;
-    top: 12.7%;
-    width: 100%;
+    padding: 0px;
+    top: 11.5%;
+    width: 17.32%;
     overflow-y: scroll;
     bottom: 0;
 }
@@ -37,13 +38,152 @@ ul {
     display: hidden;
 }
 
+.content-title{
+    display: flex;
+    font-size: 30px;
+    color: white;
+}
+
 .content{
-    margin: 10px;
-    padding: 5px;
-    width: 24%;
-    background-color: #FFCF00;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: 0px 0px 25px 10px;
+    /*background-image: url("/images/map/pirate-land.jpg");
+    background-size: cover;
+    filter: blur(1px);*/
+}
+
+.content:hover > #content-miniland{
+    filter: grayscale(0%);
     border-radius: 5px;
 }
+
+.content:hover > #content-pirate-land{
+    filter: grayscale(0%);
+    border-radius: 5px;
+}
+
+.content:hover > #content-legoredo-town{
+    filter: grayscale(0%);
+    border-radius: 5px;
+}
+
+.content:hover > #content-duplo-land{
+    filter: grayscale(0%);
+    border-radius: 5px;
+}
+
+.content:hover > #content-adventure-land{
+    filter: grayscale(0%);
+    border-radius: 5px;
+}
+
+.content:hover > #lego-movie-world{
+    filter: grayscale(0%);
+    border-radius: 5px;
+}
+
+.content:hover > #content-polar-land{
+    filter: grayscale(0%);
+    border-radius: 5px;
+}
+
+.content:hover > #content-knights-kingdom{
+    filter: grayscale(0%);
+    border-radius: 5px;
+}
+
+.content:hover > #content-ninjago-world{
+    filter: grayscale(0%);
+    border-radius: 5px;
+}
+
+.content:hover > #content-imagination-zone{
+    filter: grayscale(0%);
+    border-radius: 5px;
+}
+
+#content-miniland{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url("/images/map/miniland.jpg");
+    filter: grayscale(100%);
+}
+
+#content-pirate-land{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url("/images/map/pirate-land.jpg");
+    filter: grayscale(100%);
+}
+
+#content-legoredo-town{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url("/images/map/legoredo.jpg");
+    filter: grayscale(100%);
+}
+
+#content-duplo-land{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url("/images/map/duplo-land.jpg");
+    filter: grayscale(100%);
+}
+
+#content-adventure-land{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url("/images/map/adventure-land.jpg");
+    filter: grayscale(100%);
+}
+
+#lego-movie-world{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url("/images/map/lego-movie-world.jpg");
+    filter: grayscale(100%);
+}
+
+#content-polar-land{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url("/images/map/polar-land.jpg");
+    filter: grayscale(100%);
+}
+
+#content-knights-kingdom{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url("/images/map/knights-kingdom.jpg");
+    filter: grayscale(100%);
+}
+
+#content-ninjago-world{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url("/images/map/ninjago-world.jpg");
+    filter: grayscale(100%);
+}
+
+#content-imagination-zone{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url("/images/map/imagination-zone.jpg");
+    filter: grayscale(100%);
+}
+
 
 #map-title{
     display: flex;
@@ -65,7 +205,9 @@ ul {
 }
 
 .content:hover{
-    background-color: #ffe159;
+    box-shadow: 3px 4px 13px;
+    border-radius: 5px;
+    filter: grayscale(0%);
 }
 
 .content:hover ~ .test > .lego-brick-img{
