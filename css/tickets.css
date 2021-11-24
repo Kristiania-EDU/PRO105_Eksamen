@@ -14,6 +14,9 @@
     justify-content: center;
     position: relative;
     background-color: rgba(255, 255, 255, 0.219);
+    background-image: url(/images/Tickets/LegolandGate.jpg);
+    background-size: 105%;
+    background-repeat: no-repeat;
     
 }
 
@@ -36,11 +39,8 @@
     height: 125px;
     background-color: rgb(38, 129, 233);
     left: 150px;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1.5px;
     margin: 0;
-    box-shadow: .1px .1px 1px rgb(0, 0, 0); 
+    box-shadow: inset -7px 0px 2px -6px rgb(0, 0, 0); 
 }
 #headerTitle {
     font-family: sans-serif;
@@ -83,6 +83,34 @@
     justify-content: center;
     box-shadow: 1px 1px 2px black;
 }
+.adCircles {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 248px;
+    left: 377px;
+    top: 257px;
+}
+#adCircle1, #adCircle2, #adCircle3 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    left:350px;
+    top:200px;
+    border-radius: 50%;
+    z-index: +1;
+    background-color: #FFCF00;
+    box-shadow: 2px 2px 1px black;
+}
+.adCircleText {
+    position: absolute;
+    top: 50px;
+    font-weight: bolder;
+    transform:rotate(-20deg);
+    
+} 
 
 #ticketBox1 {
     position: absolute;
@@ -153,7 +181,7 @@
     visibility: hidden;
 }
 
-#popupContent {
+.popupContent {
     position: relative;
     width: 700px;
     height: 500px;
@@ -166,12 +194,21 @@
     flex-direction: column;
     
 }
-
-#popupTitle {
+.titleBox {
+    top: 0px;
+    width: 700px;
+    height: 70px; 
+    background-color: #FFCF00;
     position: absolute;
-    top: 25px;
-    align-self: center;
-    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    box-shadow: .5px .5px 3px black;
+}
+
+.popupTitle {
+    position: absolute;
+    
 }
 
 #popup1:target {
@@ -200,7 +237,7 @@
 
 .quantity {
     height: 20px;
-    width: 20px;
+    width: 50px;
     position: relative;
     display: inline;
     left: 130px;

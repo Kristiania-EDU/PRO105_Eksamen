@@ -31,6 +31,17 @@
             </div>
         </div>
         <div id=backgroundContainer>
+            <div class="adCircles">
+                <div id="adCircle1">
+                    <h3 class=adCircleText>For den spontane!</h3>
+                </div>
+                <div id="adCircle2">
+                    <h3 class=adCircleText>Mest populære!</h3> 
+                </div>
+                <div id="adCircle3">
+                    <h3 class=adCircleText>For den gavmilde</h3>
+                </div>
+            </div>
             <div class= "ticketBuyBox" id="ticketBox1">
                 <h3 class="ticketName">Dagspass</h3>
                 <p class="ticketInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in finibus leo.</p>
@@ -60,8 +71,10 @@
             </div>
         </div>
         <div id= "popup1" class= "popup">
-            <div id= "popupContent">
-                <h2 id=popupTitle>Bestill Dagspass</h2>
+            <div class= "popupContent">
+                <div class="titleBox">
+                    <h2 class=popupTitle>Bestill Dagspass</h2>
+                </div>
                 <a class="closePopup" href="#">&times;</a>
                 <h2 class=popupHead>Når vil du besøke oss?</h2>
                 <input class="dateSelection" type="date">
@@ -77,8 +90,10 @@
             </div>
         </div>
         <div id= "popup2" class= "popup">
-            <div id= "popupContent">
-                <h2 id=popupTitle>Sesongkort</h2>
+            <div class= "popupContent">
+                <div class="titleBox">
+                    <h2 class=popupTitle>Sesongkort</h2>
+                </div>
                 <a class="closePopup" href="#">&times;</a>
                 <h2 class=popupHead>Hvem trenger pass?</h2>
                 <label class="labelName" id="labelNameChild" for="child">Sesongkort - Barn</label>
@@ -93,15 +108,17 @@
             </div>
         </div>
         <div id= "popup3" class= "popup">
-            <div id= "popupContent">
-                <h2 id=popupTitle>Bestill Dagspass</h2>
+            <div class= "popupContent">
+                <div class="titleBox">
+                    <h2 class=popupTitle>Bestill Dagspass</h2>
+                </div>    
                 <a class="closePopup" href="#">&times;</a>
                 <h2 class=popupHead>Når vil du besøke oss?</h2>
                 <input class="dateSelection" type="date">
                 <label class="labelName" id="labelNameChild" for="child">Gavekort - Barn</label>
                 <label class="labelName" id="labelNameAdult" for="adult">Gavekort - Voksen</label>
                 <label class="labelName" id="labelNameStudent" for="student">Gavekort - student</label>
-                <label class="labelName" id="labelNameSenior" for="senior">Gavekort - Honnør</label>
+                <label class="labelName" id="labelNameSenior" for="senior">Gavekort  - Honnør</label>
                 <input type="number" class="quantity" id="child" name="child" min="0" max="100" step="1" value="0"> 
                 <input type="number" class="quantity" id="adult" name="adult" min="0" max="100" step="1" value="0">
                 <input type="number" class="quantity" id="student" name="student" min="0" max="100" step="1" value="0">
@@ -110,8 +127,8 @@
             </div>
         </div>
         <div id="thanks" class= "popup">
-            <div id= "popupContent">
-                <h2 id=popupTitle>Din bestilling er nå registert!</h2>
+            <div class= "popupContent">
+                <h2 class=popupTitle>Din bestilling er nå registert!</h2>
                 <img class="success" src="images/Tickets/checkmark.png">
                 <a class="closePopup" href="#">&times;</a>
             </div>
