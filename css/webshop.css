@@ -155,7 +155,7 @@ input.search {
 /* Popup */
 .popup {
     position: fixed;
-    visibility: hidden;
+    visibility: hidden; /* Ikke lov*/
     opacity: 0;    
     background-color: rgba(0, 0, 0, .45);
     height: 100%;
@@ -172,7 +172,7 @@ input.search {
 }
 
 .popup:target {
-    visibility: visible;
+    visibility: visible; /* Ikke lov*/
     opacity: 1;
 }
 
@@ -264,7 +264,7 @@ input.search {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, .15) 2px 5px 9px 4px;
     overflow: hidden;
-    max-height: 90vh;
+    max-height: 90vh; /* Ikke lov*/
 }
 
 .shopping-cart .items {
@@ -329,7 +329,7 @@ header .content {
 }
 
 header .lego-brick {
-    text-transform: uppercase;
+    text-transform: uppercase; /*IKKE LOV*/
     width: 250px;
     height: 50px;
     margin-top: 10px;
@@ -347,7 +347,7 @@ header p {
 
 header .cta {
     padding: .7em 1em;
-    text-transform: uppercase;
+    text-transform: uppercase; /*IKKE LOV*/
     font-size: bold;
     color: #fff;
     border: 1px solid #fff;
@@ -391,9 +391,8 @@ header .cta:hover {
 }
 
 .items {
-    list-style: none;
+    list-style: none; /* IKKE LOV */
     display: flex;
-    gap: 1em;
     flex-wrap: wrap;
     justify-content: space-between;
 }
