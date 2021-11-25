@@ -81,7 +81,8 @@
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
-    box-shadow: 1px 1px 2px black;
+    box-shadow: 1px 1px 10px 5px #c5c5c5;
+    border-radius: 10px;
 }
 .adCircles {
     position: absolute;
@@ -102,7 +103,7 @@
     border-radius: 50%;
     z-index: +1;
     background-color: #FFCF00;
-    box-shadow: 2px 2px 1px black;
+    box-shadow: 2px 2px 1px #d5d5d5;
 }
 .adCircleText {
     position: absolute;
@@ -130,7 +131,7 @@
 .ticketName {
     font-family: sans-serif;
     font-size: x-large;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .boxImg {
@@ -148,6 +149,7 @@
     overflow: auto;
     bottom: 70px;
     padding: 40px;
+    text-align: center;
 }
 
 .button {
@@ -163,7 +165,6 @@
     width: 300px;
     height: 80px;
     background-color: rgb(54, 147, 253);
-    box-shadow: 1px 1px 1px black;
     transform: .2s;
 }
 .button:hover {
