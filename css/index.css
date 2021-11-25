@@ -37,8 +37,31 @@ body > .container {
     display: block;
 }
 
+
+header, section{
+    display: block;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    
+}
+
+header .content,
+section .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+    color: var(--white-color);
+    height: 100%;
+    width: 100%;
+}
+
 header {
-    background: url(/images/frontpage/gifus.gif);
+    background-image: url(/images/frontpage/gifus.gif);
 }
 
 header ul {
@@ -67,44 +90,24 @@ section a {
 }
 
 #mapSection {
-    background: url(/images/frontpage/map.png);
+    background-image: url(/images/frontpage/map.png);
 }
 
 #ticketSection {
-    background: url(/images/frontpage/tickets.jpg);
+    background-image: url(/images/frontpage/tickets.jpg);
 }
 
 #webshopSection {
-    background: url(/images/frontpage/webshop.jpg);
+    background-image: url(/images/frontpage/webshop.jpg);
+}
+
+#openingHoursSection {
+    background-image: url(/images/frontpage/opening-hours.jpg);
 }
 
 #aboutUsSection {
-    background: url(/images/frontpage/legoland.jpg);
+    background-image: url(/images/frontpage/legoland.jpg);
 }
-
-header, section{
-    display: block;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    font-size: 2em;
-    
-}
-
-header .content,
-section .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, .5);
-    color: var(--white-color);
-    height: 100%;
-    width: 100%;
-}
-
 
 header .iconer {
     display: flex;
