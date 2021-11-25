@@ -1,12 +1,10 @@
 body{
     overflow-y: scroll;
-}
-#backgroundContainer{
-    background-image: url(/images/aboutUs/lego-Wallpaper.jpg);
+    background-image: url(/images/aboutUs/legoWallpaper.png);
     background-repeat: repeat-y;
     background-size: cover; 
-    opacity: 20%;
 }
+
 .h1{
     display: flex;
     justify-content: center;
@@ -37,7 +35,7 @@ body{
     position: relative;  
     top: 470px;
     left: 10px;
-    width: 400px;
+    width: 430px;
 }
 /* #historyImg:hover{
 
@@ -54,13 +52,13 @@ body{
 #locationsImg{
     position: relative;  
     top: 800px;
-    left: 800px;
-    width: 350px;
+    left: 760px;
+    width: 500px;
 }
-/* #locationsImg:hover{
+/*  #locationsImg:hover{
     
-} 
-/* .slide-container{
+}  */
+ .slide-container{
     width: 400px;
     height: 300px;
 }
@@ -76,4 +74,3 @@ body{
     margin: 0px;
     padding: 0px; 
 }
-  */
