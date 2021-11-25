@@ -1,13 +1,17 @@
 body{
     overflow-y: scroll;
 }
-
+#backgroundContainer{
+    background-image: url(/images/aboutUs/lego-Wallpaper.jpg);
+    background-repeat: repeat-y;
+    background-size: cover; 
+    opacity: 20%;
+}
 .h1{
     display: flex;
     justify-content: center;
     align-items: center; 
 }
-
 #quote{
     /* font-family: lego? */
     font-style: italic;
@@ -20,7 +24,6 @@ body{
     position: relative; 
     top: 170px;
 }
-
 .historyText{
     font-style: italic; 
     font-size: 15px;
@@ -30,28 +33,47 @@ body{
     left: 650px;
     right: 10px;
 }
-
 #historyImg{
     position: relative;  
     top: 470px;
     left: 10px;
     width: 400px;
 }
+/* #historyImg:hover{
 
+} */
 .locationsText{
     font-style: italic; 
     font-size: 15px;
     line-height: 1.6;
     position: relative;  
-    top: 820px;
+    top: 200px;
     right: 650px;
     left: 10px;
 }
-
 #locationsImg{
     position: relative;  
-    top: 1000px;
+    top: 800px;
     left: 800px;
     width: 350px;
 }
- 
+/* #locationsImg:hover{
+    
+} 
+/* .slide-container{
+    width: 400px;
+    height: 300px;
+}
+.image-container{
+    width: 2000px;
+    height: 300px;
+    position: relative; 
+    bottom: 10px; 
+    transition: left 2s;
+}
+.slider-image{
+    float: left;
+    margin: 0px;
+    padding: 0px; 
+}
+  */
