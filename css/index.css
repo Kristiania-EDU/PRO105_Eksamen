@@ -16,4 +16,19 @@ color: black;
 
 
 }
+.iconer {
+z-index: 3;
+height: 50%;
+width: 50%;
+justify-content: center;
+display: flex;
 
+
+
+
+}
+.facebook {
+height: 95%;
+
+
+}
