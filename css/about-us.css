@@ -9,24 +9,38 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
+    width: 100%;
+    height: 37%;
+    top: 0px;
+    
 } /* gjøre større, quote over bilder */
-.h1{
+/* .h3{
     display: flex;
+    color: blue;
     justify-content: center;
     align-items: center; 
+    position: relative; */
+}
+.container {
+    overflow: hidden;
+}
+.bannerImg {
+    display: flex;
+    width: 100%;
+    height: 1000px;
 }
 #quote{
     /* font-family: lego? */
     font-style: italic;
-    font-size: 40px;
-    color: black; 
+    font-size: 60px;
+    color: rgb(255, 255, 255); 
     text-shadow: 3px 2px rgb(124, 108, 108); 
     display: flex;
     justify-content: center;
     align-items: center; 
     position: relative; 
-    top: 170px;
+    top: 10px;
+    left: 130px;
 }
 .historyText{
     font-style: italic; 
@@ -34,10 +48,17 @@ header {
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px rgb(124, 108, 108);
     line-height: 1.6;
+    text-align: center; 
     position: relative;  
     top: 420px;
     left: 650px;
     right: 10px;
+    background-image: url(/images/aboutUs/legoBlock.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    width: 750px;
+    height: 350px;
 }
 /* skal ha noe bak teksten men vet ikke hva enda  */
 #historyImg{
@@ -69,7 +90,7 @@ header {
 /*  #locationsImg:hover{
     
 }  */
- .slide-container{
+ /*.slide-container{
     width: 400px;
     height: 300px;
 }
@@ -86,5 +107,5 @@ header {
     float: left;
     margin: 0px;
     padding: 0px; 
-}
+}*/
 /* skal være slideshow men funker ikke som det skal enda */
