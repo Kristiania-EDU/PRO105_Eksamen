@@ -13,6 +13,9 @@ ul {
     bottom: 0;
 }
 
+#empty-space{
+    height: 85px;
+}
 
 .content-title{
     display: flex;
@@ -25,6 +28,7 @@ ul {
     justify-content: center;
     width: 95%;
     margin: 0px 0px 25px 10px;
+    transition: all 0.2s ease-out;
 }
 
 .content:hover > #content-miniland {
@@ -80,16 +84,20 @@ ul {
 .content:hover ~ .destination > .destination-circle{
     transition: 100ms ease-in;
     opacity: 1;
+    height: 100px;
+    width: 100px;
   }
 
 #content-miniland{
     display: flex;
+    position: relative;
     justify-content: center;
     width: 100%;
     background-image: url("/images/map/miniland.jpg");
     background-size: cover;
     filter: grayscale(100%);
     border: 1px solid red;
+    transition: all 0.7s ease-out;
 }
 
 #content-pirate-land{
@@ -100,6 +108,7 @@ ul {
     background-size: cover;
     filter: grayscale(100%);
     border: 1px solid red;
+    transition: all 0.7s ease-out;
 }
 
 #content-legoredo-town{
@@ -110,6 +119,7 @@ ul {
     background-size: cover;
     filter: grayscale(100%);
     border: 1px solid red;
+    transition: all 0.7s ease-out;
 }
 
 #content-duplo-land{
@@ -120,6 +130,7 @@ ul {
     background-size: cover;
     filter: grayscale(100%);
     border: 1px solid red;
+    transition: all 0.7s ease-out;
 }
 
 #content-adventure-land{
@@ -130,6 +141,7 @@ ul {
     background-size: cover;
     filter: grayscale(100%);
     border: 1px solid red;
+    transition: all 0.7s ease-out;
 }
 
 #lego-movie-world{
@@ -140,6 +152,7 @@ ul {
     background-size: cover;
     filter: grayscale(100%);
     border: 1px solid red;
+    transition: all 0.7s ease-out;
 }
 
 #content-polar-land{
@@ -150,6 +163,7 @@ ul {
     background-size: cover;
     filter: grayscale(100%);
     border: 1px solid red;
+    transition: all 0.7s ease-out;
 }
 
 #content-knights-kingdom{
@@ -160,6 +174,7 @@ ul {
     background-size: cover;
     filter: grayscale(100%);
     border: 1px solid red;
+    transition: all 0.7s ease-out;
 }
 
 #content-ninjago-world{
@@ -170,6 +185,7 @@ ul {
     background-size: cover;
     filter: grayscale(100%);
     border: 1px solid red;
+    transition: all 0.7s ease-out;
 }
 
 #content-imagination-zone{
@@ -180,6 +196,7 @@ ul {
     background-size: cover;
     filter: grayscale(100%);
     border: 1px solid red;
+    transition: all 0.7s ease-out;
 }
 
 
@@ -213,13 +230,14 @@ ul {
 .destination-circle{
     position: fixed;
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
     border: 10px solid #ca1f08;
     box-shadow: 0px 3px 10px;
     transform: translateX(-13%) translateY(-35%);
-    transition: 100ms ease-out;
+    transform: translateX(-50%) translateY(-50%);
+    transition: 500ms ease-in;
     opacity: 0;
+    width: 0%;
+    height: 0%;
 }
 
 #static-container{
