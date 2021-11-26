@@ -4,7 +4,13 @@ body{
     background-repeat: repeat-y;
     background-size: cover; 
 }
-
+header {
+    background-image: url(/images/aboutUs/headerau.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+} /* gjøre større, quote over bilder */
 .h1{
     display: flex;
     justify-content: center;
@@ -25,12 +31,15 @@ body{
 .historyText{
     font-style: italic; 
     font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(124, 108, 108);
     line-height: 1.6;
     position: relative;  
     top: 420px;
     left: 650px;
     right: 10px;
 }
+/* skal ha noe bak teksten men vet ikke hva enda  */
 #historyImg{
     position: relative;  
     top: 470px;
@@ -43,6 +52,8 @@ body{
 .locationsText{
     font-style: italic; 
     font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(124, 108, 108); 
     line-height: 1.6;
     position: relative;  
     top: 200px;
@@ -66,11 +77,14 @@ body{
     width: 2000px;
     height: 300px;
     position: relative; 
+    top: 100vh; 
     bottom: 10px; 
     transition: left 2s;
+    
 }
 .slider-image{
     float: left;
     margin: 0px;
     padding: 0px; 
 }
+/* skal være slideshow men funker ikke som det skal enda */
