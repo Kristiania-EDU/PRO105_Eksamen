@@ -12,22 +12,22 @@ header {
     width: 100%;
     height: 37%;
     top: 0px;
-    
-} /* gjøre større, quote over bilder */
-/* .h3{
-    display: flex;
-    color: blue;
-    justify-content: center;
-    align-items: center; 
-    position: relative; */
 }
-.container {
+.container{
     overflow: hidden;
 }
-.bannerImg {
+.bannerImg{
     display: flex;
     width: 100%;
     height: 1000px;
+}
+#anchor{
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    color: gray;
+    font-size: 13px;
+    background-color: #ffd103;
 }
 #quote{
     /* font-family: lego? */
@@ -41,71 +41,120 @@ header {
     position: relative; 
     top: 10px;
     left: 130px;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+#quote:hover{
+    font-size: 70px;
+    text-shadow: 5px 3px rgb(124, 108, 108);
+    color: green;
+}
+#historySection{
+    background-image: url(/images/aboutUs/historyBanner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
+    top: 0px;
 }
 .historyText{
     font-style: italic; 
-    font-size: 15px;
+    font-size: 17px;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px rgb(124, 108, 108);
     line-height: 1.6;
+    padding: 120px;
     text-align: center; 
     position: relative;  
-    top: 420px;
-    left: 650px;
-    right: 10px;
+    top: 100px;
+    left: 1000px;
     background-image: url(/images/aboutUs/legoBlock.png);
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
-    width: 750px;
-    height: 350px;
+    width: 800px;
+    height: 500px;
+    animation-name: legoDrop1;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
 }
-/* skal ha noe bak teksten men vet ikke hva enda  */
-#historyImg{
-    position: relative;  
-    top: 470px;
-    left: 10px;
-    width: 430px;
+@keyframes legoDrop1{
+    from { 
+        opacity: 0;
+        transform: translateY(-400px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+#locationsSection{
+    background-image: url(/images/aboutUs/locationsHeader.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
+    top: 0px;
 }
-/* #historyImg:hover{
-
-} */
 .locationsText{
     font-style: italic; 
-    font-size: 15px;
+    font-size: 18px;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px rgb(124, 108, 108); 
-    line-height: 1.6;
+    line-height: 1.4;
     position: relative;  
+    padding: 130px;
     top: 200px;
-    right: 650px;
-    left: 10px;
+    right: 600px;
+    left: 50px;
+    text-align: center; 
+    background-image: url(/images/aboutUs/legoBlock.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    width: 800px;
+    height: 515px;
+
+    animation-name: legoDrop2;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
 }
-#locationsImg{
-    position: relative;  
-    top: 800px;
-    left: 760px;
-    width: 500px;
+@keyframes legoDrop2{
+    from { 
+        opacity: 0;
+        transform: translateY(-400px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+#gallerySection{
+    /* background-image: url(/images/aboutUs/locationsHeader.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    width: 100%;
+    height: 1000px;
+    top: 0px;
 }
-/*  #locationsImg:hover{
-    
-}  */
- /*.slide-container{
-    width: 400px;
-    height: 300px;
+.imageGallery{
+    line-height: 0;
+   -webkit-column-count: 2; 
+   -webkit-column-gap: 5px; 
+   -moz-column-count: 5;
+   -moz-column-gap: 5px;
+   column-count: 5;
+   column-gap: 5px;
 }
-.image-container{
-    width: 2000px;
-    height: 300px;
-    position: relative; 
-    top: 100vh; 
-    bottom: 10px; 
-    transition: left 2s;
-    
-}
-.slider-image{
-    float: left;
-    margin: 0px;
-    padding: 0px; 
-}*/
-/* skal være slideshow men funker ikke som det skal enda */
+.imageGallery img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 5px;
+    border-radius: 5%;
+    box-shadow: 2px 4px rgb(141, 128, 128);
+ }
