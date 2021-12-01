@@ -57,6 +57,7 @@ header {
     height: 1000px;
     top: 0px;
 }
+
 .historyText{
     font-style: italic; 
     font-size: 17px;
@@ -74,22 +75,8 @@ header {
     background-size: cover;
     width: 800px;
     height: 500px;
-    animation-name: legoDrop1;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
-    animation-delay: 3s;
 }
 
-@keyframes legoDrop1{
-    from { 
-        opacity: 0;
-        transform: translateY(-400px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-} 
 #locationsSection{
     background-image: url(/images/aboutUs/locationsHeader.jpg);
     background-size: cover;
@@ -117,24 +104,8 @@ header {
     background-size: cover;
     width: 800px;
     height: 515px;
-
-    animation-name: legoDrop2;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
-    animation-delay: 10s;
 }
-@keyframes legoDrop2{
-    0%{ 
-        display: block;
-        opacity: 0;
-        transform: translateY(-400px);
-    }
-    100%{
-        display: 100%;
-        opacity: 1;
-        transform: translateY(0);
-    }
-} 
+
 #gallerySection{
     background-image: url(/images/aboutUs/galleryheader.jpg);
     background-size: cover;
