@@ -48,7 +48,7 @@ header{
     font-size: 70px;
     text-shadow: 5px 3px rgb(124, 108, 108);
     color: green;
-    cursor: grab;
+    cursor: pointer;
 }
 #historySection{
     background-image: url(/images/aboutUs/historyBanner.jpg);
