@@ -5,7 +5,14 @@
     font-weight: normal;
     font-style: normal;
 }
-
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+li {
+    margin-bottom: 15px;
+    
+}
 .container {
     width: 100%;
     height: 100%;
@@ -22,8 +29,7 @@
 #banner {
     position: relative;
     width: 100%;
-    height: 250px;
-    background-color: rgba(0, 0, 255, 0.897);
+    height: 250px; 
     display: flex;
     align-items: center; 
     background-image: url(/images/Tickets/BannerImg.jpg);
@@ -49,7 +55,7 @@
 #headerTitle {
     font-family: sans-serif;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 45px;
     border-radius: 15px;
     margin: 0;
@@ -203,32 +209,29 @@
     background-color: white;
     box-shadow: .5px .5px .5px black;
     display: flex;
-    align-content: center;
-    justify-content: center;
-    margin-top: 50px;
-    flex-direction: column;
+    flex-direction: row;
     z-index: +1;
+    align-items: center;
+    justify-content: center;
     
 }
+
 .titleBox {
+    position: absolute;
     top: 0px;
     width: 700px;
     height: 70px; 
     background-color: #FFCF00;
-    position: absolute;
     display: flex;
+    padding-bottom: 1px;
     justify-content: center;
     align-content: center;
     box-shadow: .5px .5px 3px black;
 }
 
-.popupTitle {
-    position: absolute;
-    
-}
 
 #popup1:target {
-    visibility: visible;
+  visibility: visible;
 }
 #popup2:target {
     visibility: visible;
@@ -251,35 +254,29 @@
 }
 
 
+
 .quantity {
     height: 20px;
     width: 50px;
-    position: relative;
-    display: inline;
-    left: 130px;
-    margin: 6px;
-    bottom: 49px;    
 }
 
-.labelName{
-    position: relative;
-    display: inline;
-    margin: 9px; 
-    top: 80px;
-}
+
 
 .popupHead {
     font-family: sans-serif;
     font-weight: bold;
     position: absolute;
     top: 100px;
-    left: 10px;
+    display: flex;
+    align-self: center;
+    
 }
 
 .dateSelection {
     position:absolute;
-    top: 150px;
-    left: 10px;
+    top: 160px;
+    display: flex;
+    align-self: center;
     
 }
 .popBuyBtn {
