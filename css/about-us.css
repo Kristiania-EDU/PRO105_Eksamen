@@ -1,9 +1,10 @@
+/* Kodet av Julie  */
 body{
     overflow-y: scroll;
     background-repeat: repeat-y;
     background-size: cover; 
 }
-header {
+header{
     background-image: url(/images/aboutUs/headerau.jpg);
     background-size: cover;
     background-position: center;
@@ -47,6 +48,7 @@ header {
     font-size: 70px;
     text-shadow: 5px 3px rgb(124, 108, 108);
     color: green;
+    cursor: grab;
 }
 #historySection{
     background-image: url(/images/aboutUs/historyBanner.jpg);
@@ -57,7 +59,6 @@ header {
     height: 1000px;
     top: 0px;
 }
-
 .historyText{
     font-style: italic; 
     font-size: 17px;
@@ -76,7 +77,6 @@ header {
     width: 800px;
     height: 500px;
 }
-
 #locationsSection{
     background-image: url(/images/aboutUs/locationsHeader.jpg);
     background-size: cover;
@@ -105,7 +105,6 @@ header {
     width: 800px;
     height: 515px;
 }
-
 #gallerySection{
     background-image: url(/images/aboutUs/galleryheader.jpg);
     background-size: cover;
@@ -119,7 +118,7 @@ header {
     background-image: url(/images/aboutUs/textbubble.png);
     position: relative;
     font-style: italic; 
-    font-size: 13px;
+    font-size: 12px;
     color: rgb(0, 0, 0);
     text-shadow: 1px 1px rgb(124, 108, 108);
     text-align: center; 
@@ -127,10 +126,10 @@ header {
     background-position: center; 
     background-size: cover;
     width: 500px;
-    height: 200px;
+    height: 205px;
     padding: 60px; 
     padding-top: 20px;
-    top: 20px;
+    top: 250px;
     left: 1150px; 
     transform: scaleX(-1);
 }
@@ -141,42 +140,46 @@ h1 {
     position: relative;
     width: 290px;
     height: 230px;
-    left: 78vw;
+    top: 300px;
+    left: 75vw;
     animation-name: legoGuy;
-    animation-duration: 0.3s;
+    animation-duration: 0.7s;
     animation-iteration-count: infinite;
     animation-delay: 3s;
 }
 @keyframes legoGuy{
-    from{ 
+    0%{ 
     }
-    to{
-        bottom: 2%;
+    50%{
+        top: 270px;
+    }
+    100%{
     }
 } 
 .imageGallery{
-    line-height: 0;
-    column-count: 5;
-    column-gap: 5px;
-    justify-content: center;
-    align-content: center;
+    column-count: 6;
+    padding-bottom: 5px;
     position: relative;
+    left: 50px;
+    top: -100px;
 }
-.imageGallery img {
-    width: 100% !important;
-    /* width: 400px;
-    height: 300px; */
-    margin-bottom: 5px;
+.imageGallery img{
+    width: 300px;
+    height: 200px;
     border-radius: 5%;
-    box-shadow: 2px 4px rgb(141, 128, 128);
+    box-shadow: 5px 6px rgb(12, 12, 12);
+    opacity: 0.3;
  }
   .imageGallery img:hover{
-     opacity: 0.7;
+    opacity: 1;
+    z-index: -1;
+    cursor: zoom-in;
  } 
  .imageGallery img:active{
-     opacity: 1;
-    width: 700px;
-    height: 550px;
+    opacity: 1;
+    z-index: -1;
+    width: 450px;
+    height: 350px; 
 } 
  /* Contact */
  #contactSection{
