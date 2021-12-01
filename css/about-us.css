@@ -23,11 +23,12 @@ header {
 }
 #anchor{
     justify-content: center;
-    align-items: center; 
+    text-align: center;
     position: relative;
     color: gray;
     font-size: 13px;
     background-color: #ffd103;
+    width: 110%;
 }
 #quote{
     /* font-family: lego? */
