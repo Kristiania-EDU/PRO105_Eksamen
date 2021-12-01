@@ -157,7 +157,6 @@ h1 {
     }
 } 
 .imageGallery{
-    display: flex;
     column-count: 6;
     padding-bottom: 5px;
     position: relative;
@@ -173,6 +172,7 @@ h1 {
     opacity: 0.3;
     z-index: 1;
     margin-right: 10px;
+    margin-bottom: 15px;
     position: relative;
  }
   .imageGallery img:hover{
