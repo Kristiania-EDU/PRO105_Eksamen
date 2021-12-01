@@ -41,7 +41,7 @@
                 
                 <div class="content">
                     <h3 class="ticketName">Dagspass</h3>
-                    <img class="boxImg" src="/images/Tickets/Ticket.png" />
+                    <img class="boxImg" src="/images/Tickets/Ticket.png" alt="tickets"/>
                     <p class="ticketInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in finibus leo.</p>
                 </div>
 
@@ -54,7 +54,7 @@
 
                 <div class="content">
                     <h3 class="ticketName">Sesongkort</h3>
-                    <img class="boxImg" src="/images/Tickets/pass.png" />
+                    <img class="boxImg" src="/images/Tickets/pass.png" alt="seasonpass"/>
                     <p class="ticketInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in finibus leo.</p>
                 </div>
                 
@@ -67,7 +67,7 @@
 
                 <div class="content">
                     <h3 class="ticketName">Gavekort</h3>
-                    <img class="boxImg" src="/images/Tickets/Giftcard.png" />
+                    <img class="boxImg" src="/images/Tickets/Giftcard.png" alt="giftcard" />
                     <p class="ticketInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in finibus leo.</p>
                 </div>
                 
@@ -91,14 +91,22 @@
             <a class="closePopup" href="#">&times;</a>
             <h2 class=popupHead>Når vil du besøke oss?</h2>
             <input class="dateSelection" type="date">
-            <label class="labelName" id="labelNameChild" for="child">Barnebillett</label>
-            <label class="labelName" id="labelNameAdult" for="adult">Voksenbillett</label>
-            <label class="labelName" id="labelNameStudent" for="student">Studentbillett</label>
-            <label class="labelName" id="labelNameSenior" for="senior">Honnørbillett</label>
-            <input type="number" class="quantity" id="child" name="child" min="0" max="100" step="1" value="0">
-            <input type="number" class="quantity" id="adult" name="adult" min="0" max="100" step="1" value="0">
-            <input type="number" class="quantity" id="student" name="student" min="0" max="100" step="1" value="0">
-            <input type="number" class="quantity" id="senior" name="senior" min="0" max="100" step="1" value="0">
+            <div class="labelBox">
+                <ul>
+                    <li>Dagspass - Barn</li>
+                    <li>Dagspass - Voksen</li>
+                    <li>Dagspass - Student</li>
+                    <li>Dagspass - Honnør</li>
+                </ul>
+            </div>
+            <div class="inputBox">
+                <ul>
+                   <li><input type="number" class="quantity" id="child" name="child" min="0" max="100" step="1" value="0"></li>
+                    <li><input type="number" class="quantity" id="adult" name="adult" min="0" max="100" step="1" value="0"></li>
+                    <li><input type="number" class="quantity" id="student" name="student" min="0" max="100" step="1" value="0"></li>
+                    <li><input type="number" class="quantity" id="senior" name="senior" min="0" max="100" step="1" value="0"></li>
+                </ul>
+            </div>
             <a class="popBuyBtn" href="#thanks">Bestill</a>
         </div>
     </div>
@@ -109,14 +117,22 @@
             </div>
             <a class="closePopup" href="#">&times;</a>
             <h2 class=popupHead>Hvem trenger pass?</h2>
-            <label class="labelName" id="labelNameChild" for="child">Sesongkort - Barn</label>
-            <label class="labelName" id="labelNameAdult" for="adult">Sesongkort - Voksen</label>
-            <label class="labelName" id="labelNameStudent" for="student">Sesongkort - student</label>
-            <label class="labelName" id="labelNameSenior" for="senior">Sesongkort - Honnør</label>
-            <input type="number" class="quantity" id="child" name="child" min="0" max="100" step="1" value="0">
-            <input type="number" class="quantity" id="adult" name="adult" min="0" max="100" step="1" value="0">
-            <input type="number" class="quantity" id="student" name="student" min="0" max="100" step="1" value="0">
-            <input type="number" class="quantity" id="senior" name="senior" min="0" max="100" step="1" value="0">
+            <div class="labelBox">
+                <ul>
+                    <li>Sesongkort - Barn</li>
+                    <li>Sesongkort - Voksen</li>
+                    <li>Sesongkort - Student</li>
+                    <li>Sesongkort - Honnør</li>
+                </ul>
+            </div>
+            <div class="inputBox">
+                <ul>
+                   <li><input type="number" class="quantity" id="child" name="child" min="0" max="100" step="1" value="0"></li>
+                    <li><input type="number" class="quantity" id="adult" name="adult" min="0" max="100" step="1" value="0"></li>
+                    <li><input type="number" class="quantity" id="student" name="student" min="0" max="100" step="1" value="0"></li>
+                    <li><input type="number" class="quantity" id="senior" name="senior" min="0" max="100" step="1" value="0"></li>
+                </ul>
+            </div>
             <a class="popBuyBtn" href="#thanks">Bestill</a>
         </div>
     </div>
@@ -127,14 +143,22 @@
             </div>
             <a class="closePopup" href="#">&times;</a>
             <h2 class=popupHead>Til hvem vil du kjøpe gave til</h2>
-            <label class="labelName" id="labelNameChild" for="child">Gavekort - Barn</label>
-            <label class="labelName" id="labelNameAdult" for="adult">Gavekort - Voksen</label>
-            <label class="labelName" id="labelNameStudent" for="student">Gavekort - student</label>
-            <label class="labelName" id="labelNameSenior" for="senior">Gavekort - Honnør</label>
-            <input type="number" class="quantity" id="child" name="child" min="0" max="100" step="1" value="0">
-            <input type="number" class="quantity" id="adult" name="adult" min="0" max="100" step="1" value="0">
-            <input type="number" class="quantity" id="student" name="student" min="0" max="100" step="1" value="0">
-            <input type="number" class="quantity" id="senior" name="senior" min="0" max="100" step="1" value="0">
+            <div class="labelBox">
+                <ul>
+                    <li>Gavekort - Barn</li>
+                    <li>Gavekort - Voksen</li>
+                    <li>Gavekort - Student</li>
+                    <li>Gavekort - Honnør</li>
+                </ul>
+            </div>
+            <div class="inputBox">
+                <ul>
+                   <li><input type="number" class="quantity" id="child" name="child" min="0" max="100" step="1" value="0"></li>
+                    <li><input type="number" class="quantity" id="adult" name="adult" min="0" max="100" step="1" value="0"></li>
+                    <li><input type="number" class="quantity" id="student" name="student" min="0" max="100" step="1" value="0"></li>
+                    <li><input type="number" class="quantity" id="senior" name="senior" min="0" max="100" step="1" value="0"></li>
+                </ul>
+            </div>
             <a class="popBuyBtn" href="#thanks">Bestill</a>
         </div>
     </div>
@@ -143,7 +167,7 @@
             <div class="titleBox">
                 <h2 class="popupTitle">Din bestilling er nå registert!</h2>
             </div>
-            <img class="success" src="images/Tickets/checkmark.png">
+            <img class="success" src="images/Tickets/checkmark.png" alt="checkmark">
             <a class="closePopup" href="#">&times;</a>
         </div>
     </div>
