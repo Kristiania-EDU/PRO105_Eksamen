@@ -1,260 +1,217 @@
-ul {
-    padding: 0;
-}
-
-#locations{
-    display: flex;
-    justify-content: start;
+#img-container{
     position: absolute;
-    padding: 0px;
-    top: 11.9%;
-    width: 200%;
-    overflow-y: scroll;
-    bottom: 0;
+    width: 100%;
+    height: 92.4%;
 }
 
-#empty-space{
-    height: 85px;
-}
-
-.content-title{
-    display: flex;
+.btn-title{
+    color: rgb(255, 255, 255);
     font-size: 30px;
-    color: white;
 }
 
-.content{
+#location-container{
     display: flex;
-    justify-content: center;
-    width: 95%;
-    margin: 0px 0px 25px 10px;
-    transition: all 0.2s ease-out;
+    flex-direction: column;
+    align-items: center;
+    top: 116px;
+    position: absolute;
+    width: 400px;
+    height: 893px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
-.content:hover > #content-miniland {
-    filter: grayscale(0%);
-    border-radius: 5px;
+.scroll-container{
+    position: absolute;
+    width: 400px;
+    height: 1305px;
 }
 
-.content:hover > #content-pirate-land{
-    filter: grayscale(0%);
-    border-radius: 5px;
-}
-
-.content:hover > #content-legoredo-town{
-    filter: grayscale(0%);
-    border-radius: 5px;
-}
-
-.content:hover > #content-duplo-land{
-    filter: grayscale(0%);
-    border-radius: 5px;
-}
-
-.content:hover > #content-adventure-land{
-    filter: grayscale(0%);
-    border-radius: 5px;
-}
-
-.content:hover > #lego-movie-world{
-    filter: grayscale(0%);
-    border-radius: 5px;
-}
-
-.content:hover > #content-polar-land{
-    filter: grayscale(0%);
-    border-radius: 5px;
-}
-
-.content:hover > #content-knights-kingdom{
-    filter: grayscale(0%);
-    border-radius: 5px;
-}
-
-.content:hover > #content-ninjago-world{
-    filter: grayscale(0%);
-    border-radius: 5px;
-}
-
-.content:hover > #content-imagination-zone{
-    filter: grayscale(0%);
-    border-radius: 5px;
-}
-
-.content:hover ~ .destination > .destination-circle{
-    transition: 100ms ease-in;
-    opacity: 1;
-    height: 100px;
-    width: 100px;
-  }
-
-#content-miniland{
-    display: flex;
+#btn-window{
     position: relative;
-    justify-content: center;
-    width: 100%;
-    background-image: url("/images/map/miniland.jpg");
-    background-size: cover;
+    margin: 20px;
+    display: flex;
+    background-color: #FFCF00;
+    height: 100px;
+    width: 350px;
+    transition-duration: 300ms;
     filter: grayscale(100%);
-    border: 1px solid red;
-    transition: all 0.7s ease-out;
-}
-
-#content-pirate-land{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-image: url("/images/map/pirate-land.jpg");
-    background-size: cover;
-    filter: grayscale(100%);
-    border: 1px solid red;
-    transition: all 0.7s ease-out;
-}
-
-#content-legoredo-town{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-image: url("/images/map/legoredo.jpg");
-    background-size: cover;
-    filter: grayscale(100%);
-    border: 1px solid red;
-    transition: all 0.7s ease-out;
-}
-
-#content-duplo-land{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-image: url("/images/map/duplo-land.jpg");
-    background-size: cover;
-    filter: grayscale(100%);
-    border: 1px solid red;
-    transition: all 0.7s ease-out;
-}
-
-#content-adventure-land{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-image: url("/images/map/adventure-land.jpg");
-    background-size: cover;
-    filter: grayscale(100%);
-    border: 1px solid red;
-    transition: all 0.7s ease-out;
-}
-
-#lego-movie-world{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-image: url("/images/map/lego-movie-world.jpg");
-    background-size: cover;
-    filter: grayscale(100%);
-    border: 1px solid red;
-    transition: all 0.7s ease-out;
-}
-
-#content-polar-land{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-image: url("/images/map/polar-land.jpg");
-    background-size: cover;
-    filter: grayscale(100%);
-    border: 1px solid red;
-    transition: all 0.7s ease-out;
-}
-
-#content-knights-kingdom{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-image: url("/images/map/knights-kingdom.jpg");
-    background-size: cover;
-    filter: grayscale(100%);
-    border: 1px solid red;
-    transition: all 0.7s ease-out;
-}
-
-#content-ninjago-world{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-image: url("/images/map/ninjago-world.jpg");
-    background-size: cover;
-    filter: grayscale(100%);
-    border: 1px solid red;
-    transition: all 0.7s ease-out;
-}
-
-#content-imagination-zone{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-image: url("/images/map/imagination-zone.jpg");
-    background-size: cover;
-    filter: grayscale(100%);
-    border: 1px solid red;
-    transition: all 0.7s ease-out;
-}
-
-
-#map-title{
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    width: 100%;
-}
-
-#map-img{
-    display: flex;
-    position: absolute;
-    justify-content: end;
-    width: 100%;
-}
-
-.container{
-    display: flex;
-    justify-content: end;
-    width: 100%;
-}
-
-.content:hover{
-    box-shadow: 3px 4px 13px;
     border-radius: 5px;
-    filter: grayscale(0%);
+    z-index: 1;
 }
 
+.btn-window-text-title{
+    position: absolute;
+    top: 41%;
+    border-top: 10px solid rgb(255, 255, 255);
+    width: 350px;
+    z-index: 2;
+    padding: 5px;
+}
+
+.btn-window-text{
+    position: absolute;
+    top: 60%;
+    z-index: 1;
+    padding: 5px;
+}
+
+/*Alle de forskjellige bildene for de forskjellige lokasjonene.*/
+
+.btn-window-img-container-miniland{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 100px;
+    background-image: url(/images/map/miniland.jpg);
+    background-size: cover;
+    z-index: 2;
+    overflow: visible;
+}
+
+.btn-window-img-container-pirateland{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 100px;
+    background-image: url(/images/map/pirate-land.jpg);
+    background-size: cover;
+    z-index: 2;
+    overflow: visible;
+}
+
+.btn-window-img-container-legoredo{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 100px;
+    background-image: url(/images/map/legoredo.jpg);
+    background-size: cover;
+    z-index: 2;
+    overflow: visible;
+}
+
+.btn-window-img-container-duplo{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 100px;
+    background-image: url(/images/map/duplo-land.jpg);
+    background-size: cover;
+    z-index: 2;
+    overflow: visible;
+}
+
+.btn-window-img-container-adventure{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 100px;
+    background-image: url(/images/map/adventure-land.jpg);
+    background-size: cover;
+    z-index: 2;
+    overflow: visible;
+}
+
+.btn-window-img-container-movie{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 100px;
+    background-image: url(/images/map/lego-movie-world.jpg);
+    background-size: cover;
+    z-index: 2;
+    overflow: visible;
+}
+
+.btn-window-img-container-polar{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 100px;
+    background-image: url(/images/map/polar-land.jpg);
+    background-size: cover;
+    z-index: 2;
+    overflow: visible;
+}
+
+.btn-window-img-container-knights{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 100px;
+    background-image: url(/images/map/knights-kingdom.jpg);
+    background-size: cover;
+    z-index: 2;
+    overflow: visible;
+}
+
+.btn-window-img-container-ninjago{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 100px;
+    background-image: url(/images/map/ninjago-world.jpg);
+    background-size: cover;
+    z-index: 2;
+    overflow: visible;
+}
+
+.btn-window-img-container-imagination{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 100px;
+    background-image: url(/images/map/imagination-zone.jpg);
+    background-size: cover;
+    z-index: 2;
+    overflow: visible;
+}
+
+
+
+#btn-window:hover{
+    filter: grayscale(0%);
+    box-shadow: 0px 3px 10px;
+    z-index: 3;
+}
+
+#btn-window:hover .div-dropdown {
+    position: absolute;
+    display: flex;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px;
+    opacity: 1;
+}
+
+.div-dropdown{
+    position: absolute;
+    opacity: 0;
+    height: 100px;
+    width: 350px;
+    z-index: 1;
+    background-color: #FFCF00;
+    transition: 200ms ease-in;
+}
 
 .destination-circle{
     position: fixed;
+    opacity: 0;
     border-radius: 50%;
     border: 10px solid #ca1f08;
     box-shadow: 0px 3px 10px;
     transform: translateX(-13%) translateY(-35%);
     transform: translateX(-50%) translateY(-50%);
     transition: 500ms ease-in;
-    opacity: 0;
     width: 0%;
     height: 0%;
+    z-index: 10;
 }
 
-#static-container{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    min-height: 1000px;
-    min-width: 1920px;
-}
-
-#static-container-map{
-    display: flex;
-    position: absolute;
-    z-index: -1;
-    justify-content: end;
-    top: 119px;
-    height: 100%;
-    min-height: 1000px;
-    min-width: 1920px;
+#btn-window:hover + .destination-circle{
+    opacity: 1;
+    transition: 100ms ease-in;
+    height: 100px;
+    width: 100px;
 }
