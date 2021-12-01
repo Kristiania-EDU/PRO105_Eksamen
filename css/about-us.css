@@ -79,6 +79,7 @@ header {
     animation-iteration-count: 1;
     animation-delay: 3s;
 }
+
 @keyframes legoDrop1{
     from { 
         opacity: 0;
