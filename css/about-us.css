@@ -159,12 +159,16 @@ h1 {
 .imageGallery{
     position: absolute;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     column-count: 6;
     padding-bottom: 5px;
     position: relative;
     left: 50px;
     top: -100px;
     z-index: 1;
+    width: 900px;
+    height: 600px;
 }
 .imageGallery img{
     width: 300px;
@@ -173,7 +177,7 @@ h1 {
     box-shadow: 5px 6px rgb(12, 12, 12);
     opacity: 0.3;
     z-index: 1;
-    margin-right: 10px;
+    margin: 10px;
  }
   .imageGallery img:hover{
     opacity: 1;
