@@ -79,7 +79,7 @@ header{
     width: 800px;
     height: 500px;
 }
-/* About locations */
+/* About park locations */
 #locationsSection{
     background-image: url(/images/aboutUs/locationsHeader.jpg);
     background-size: cover;
@@ -161,7 +161,6 @@ h1 {
     }
 } 
 .imageGallery{
-    position: absolute;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -169,7 +168,7 @@ h1 {
     padding-bottom: 5px;
     position: relative;
     left: 50px;
-    top: -100px;
+    top: -300px;
     z-index: 1;
     width: 900px;
     height: 600px;
