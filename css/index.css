@@ -1,40 +1,29 @@
 body {
-background-color: rgb(251,84,84);
-z-index: 2;
+    background-color: rgb(251,84,84);
+    z-index: 2;
+    /* background color and fixing the position of it */
 }
 
 .container{
-position: relative;
-justify-content: center;
-display: flex;
-
+    position: relative;
+    justify-content: center;
+    display: flex;
+    /* fixing the position of the content inside, where everything will go togheter */
 }
 
 #text {
-position: relative;
-color: black;
-
+    position: relative;
+    color: black;
+    /* fixing color for the text and setting position of it */
 
 }
-/* .iconer {
-z-index: 3;
-height: 50%;
-width: 50%;
-justify-content: center;
-display: flex;
-margin: -10px;
-}
-.facebook {
-height: 95%;
-} */
 
-
-/* Seb */
 
 body > .container {
     height: 100%;
     overflow-y: scroll;
     display: block;
+    /* the size of pictures and the ability to scroll */
 }
 
 
@@ -47,7 +36,7 @@ header, section{
     font-size: 2em;
     
 }
-
+/* setting position, colors, sizes for every class*/
 header .content,
 section .content {
     display: flex;
@@ -59,7 +48,7 @@ section .content {
     height: 100%;
     width: 100%;
 }
-
+/* editing the contents and the frontpage (main page with the gif) */
 header {
     background-image: url(/images/frontpage/gifus.gif);
 }
@@ -88,6 +77,7 @@ section a {
     margin-top: 1em;
     color: #fff;
 }
+/* setting the background images and their positions */
 
 #mapSection {
     background-image: url(/images/frontpage/map.jpeg);
