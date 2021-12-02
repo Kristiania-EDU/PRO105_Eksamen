@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
+ <!--
+    Webshop 
+
+    - There are some places i would have liked to used things like:
+        ul, li, etc. But because of css-properties i've had to make it 
+-->
+
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +21,8 @@
 <body>
 
     <nav>
-        <img class="logo" src="images/logo.png" />
-
+        <img alt="Legoland logo" class="logo" src="images/logo.png" />
+ 
         <ul>
             <li><a href="index.html">Hjem</a></li>
             <li><a href="map.html">Kart</a></li>
@@ -39,7 +47,7 @@
 
                 <!--Header-->
                 <div class="header">
-                    <h1>Handlekurv</h1>
+                    <h2>Handlekurv</h2>
                 </div>
 
                 <!--List of items-->
@@ -51,10 +59,10 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                             <span>NOK 369,-</span>
                         </div>
-                        <div class="footer item-counter">
+                        <div class="footer itemCounter">
                             <input class="input" type="number" value="1" />
-                            <span class="btn btn-success">+</span>
-                            <span class="btn btn-danger">-</span>
+                            <span class="btn btnSuccess">+</span>
+                            <span class="btn btnDanger">-</span>
                         </div>
                     </li>
 
@@ -65,10 +73,10 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                             <span>NOK 456,-</span>
                         </div>
-                        <div class="footer item-counter">
+                        <div class="footer itemCounter">
                             <input class="input" type="number" value="1" />
-                            <span class="btn btn-success">+</span>
-                            <span class="btn btn-danger">-</span>
+                            <span class="btn btnSuccess">+</span>
+                            <span class="btn btnDanger">-</span>
                         </div>
                     </li>
                 </ul>
@@ -87,7 +95,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <span class="btn btn-primary">Fullfør kjøp</span>
+                    <span class="btn btnPrimary">Fullfør kjøp</span>
                 </div>
             </div>
         </div>
@@ -111,12 +119,12 @@
             - Description/motto 
             - A custom legobrick button for anchoring
         -->
-        <header class="content-container">
+        <header class="contentContainer">
             <div class="content">
                 <h1>Velkommen til vår nettbutikk!</h1>
                 <p>Her kan du kjøpe alt fra lego til klær</p>
 
-                <a class="lego-brick transparent" href="#categories">
+                <a class="legoBrick transparent" href="#categories">
                     <div class="header">
                         <span class="circle"></span>
                         <span class="circle"></span>
@@ -144,18 +152,18 @@
                 - Price
                 - Add-To-Shoppingcart-Button
         -->
-        <div id="categories" class="categories content-container">
+        <div id="categories" class="categories contentContainer">
 
             <div class="content">
                 <section id="legoSection" class="lego category">
                     <div class="header">
-                        <h1>Pakker med lego</h1>
+                        <h2>Pakker med lego</h2>
 
                         <a class="filter" href="#filterPopup1">
                             <img class="icon" src="images/webshop/filter_icon.png" alt="Toggle filter">
                         </a>
 
-                        <div id="filterPopup1" class="popup filter-popup">
+                        <div id="filterPopup1" class="popup filterPopup">
                             <div class="content-wrapper">
                                 <div class="header">
                                     <h3>Filtre for Lego</h3>
@@ -163,37 +171,33 @@
                                 </div>
                                 <div class="content">
                                     <div class="filters">
-                                        <div class="filter-container">
+                                        <div class="filterContainer">
                                             <h3>Kategori</h3>
-                                            <ul class="filter-items items">
-                                                <li class="filter-item">
-                                                    <input type="checkbox" name="minecraft" />
+                                            <ul class="filterItems items">
+                                                <li class="filterItem">
                                                     <label for="minecraft">Minecraft</label>
+                                                    <input type="checkbox" id="minecraft" name="minecraft" />
                                                 </li>
-                                                <li class="filter-item">
-                                                    <input type="checkbox" name="star_wars" />
+                                                <li class="filterItem">
                                                     <label for="star_wars">Starwars</label>
+                                                    <input type="checkbox" id="star_wars" name="star_wars" />
+                                                    
                                                 </li>
-                                                <li class="filter-item">
-                                                    <input type="checkbox" name="klassisk" />
-                                                    <label for="klassisk">Klassisk</label>
+                                                <li class="filterItem">
+                                                    <label for="classic">Klassisk</label>
+                                                    <input type="checkbox" id="classic" name="classic" />
                                                 </li>
-                                                <li class="filter-item">
-                                                    <input type="checkbox" name="spiderman" />
+                                                <li class="filterItem">
                                                     <label for="spiderman">Spiderman</label>
+                                                    <input type="checkbox" id="spiderman" name="spiderman" />
                                                 </li>
                                             </ul>
                                         </div>
-
-                                        <div class="filters">
-                                            <h3></h3>
-                                        </div>
-
                                     </div>
                                 </div>
                                 <div class="footer">
-                                    <a class="btn btn-danger" href="#">Lukk</a>
-                                    <a class="btn btn-success" href="#">Bruk</a>
+                                    <a class="btn btnDanger" href="#">Lukk</a>
+                                    <a class="btn btnSuccess" href="#">Bruk</a>
                                 </div>
                             </div>
                         </div>
@@ -202,8 +206,8 @@
 
 
                     <div class="content">
-                        <ul class="items webshop-items">
-                            <li class="item webshop-item">
+                        <ul class="items webshopItems">
+                            <li class="item webshopItem">
                                 <div class="content">
                                     <img src="images/webshop/starwars_kit.jpg" alt="Starwars kit" />
                                     <h3>Starwars</h3>
@@ -211,7 +215,7 @@
                                     <span>NOK 369,-</span>
                                 </div>
                                 <div class="footer">
-                                    <div class="lego-brick yellow">
+                                    <div class="legoBrick yellow">
                                         <div class="header">
                                             <span class="circle"></span>
                                             <span class="circle"></span>
@@ -224,7 +228,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item webshop-item">
+                            <li class="item webshopItem">
                                 <div class="content">
                                     <img src="images/webshop/spiderman_kit.jpeg" alt="Spiderman kit" />
                                     <h3>Spiderman</h3>
@@ -232,20 +236,19 @@
                                     <span>NOK 456,-</span>
                                 </div>
                                 <div class="footer">
-                                    <div class="lego-brick yellow">
+                                    <div class="legoBrick yellow">
                                         <div class="header">
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
-
                                         </div>
                                         <label>Legg til i handlekurv</label>
                                     </div>
                                 </div>
                             </li>
-                            <li class="item webshop-item">
+                            <li class="item webshopItem">
                                 <div class="content">
                                     <img src="images/webshop/classic_kit.jpg" alt="Classic kit" />
                                     <h3>Klassisk</h3>
@@ -253,20 +256,19 @@
                                     <span>NOK 249,-</span>
                                 </div>
                                 <div class="footer">
-                                    <div class="lego-brick yellow">
+                                    <div class="legoBrick yellow">
                                         <div class="header">
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
-
                                         </div>
                                         <label>Legg til i handlekurv</label>
                                     </div>
                                 </div>
                             </li>
-                            <li class="item webshop-item">
+                            <li class="item webshopItem">
                                 <div class="content">
                                     <img src="images/webshop/minecraft_kit.jpg" alt="Minecraft kit"/>
                                     <h3>Minecraft</h3>
@@ -274,14 +276,13 @@
                                     <span>NOK 334,-</span>
                                 </div>
                                 <div class="footer">
-                                    <div class="lego-brick yellow">
+                                    <div class="legoBrick yellow">
                                         <div class="header">
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
-
                                         </div>
                                         <label>Legg til i handlekurv</label>
                                     </div>
@@ -291,16 +292,15 @@
                     </div>
                 </section>
 
-
                 <section class="category clothing">
                     <div class="header">
-                        <h1>Spill - PS4</h1>
+                        <h2>Spill - PS4</h2>
 
                         <a class="filter" href="#filterPopup2">
                             <img class="icon" src="images/webshop/filter_icon.png" alt="Toggle filter">
                         </a>
 
-                        <div id="filterPopup2" class="popup filter-popup">
+                        <div id="filterPopup2" class="popup filterPopup">
                             <div class="content-wrapper">
                                 <div class="header">
                                     <h3>Filtre for Spill - PS4</h3>
@@ -308,44 +308,39 @@
                                 </div>
                                 <div class="content">
                                     <div class="filters">
-                                        <div class="filter-container">
+                                        <div class="filterContainer">
                                             <h3>Kategori</h3>
-                                            <ul class="filter-items items">
-                                                <li class="filter-item">
-                                                    <input type="checkbox" name="minecraft" />
-                                                    <label for="minecraft">City undercover</label>
+                                            <ul class="filterItems items">
+                                                <li class="filterItem">
+                                                    <label for="game1Input">City undercover</label>
+                                                    <input type="checkbox" id="game1Input" name="game1Input" />
                                                 </li>
-                                                <li class="filter-item">
-                                                    <input type="checkbox" name="star_wars" />
-                                                    <label for="star_wars">Worlds</label>
+                                                <li class="filterItem">
+                                                    <label for="game2Input">Worlds</label>
+                                                    <input type="checkbox" id="game2Input" name="game2Input" />
                                                 </li>
-                                                <li class="filter-item">
-                                                    <input type="checkbox" name="klassisk" />
-                                                    <label for="klassisk">Jurassic World</label>
+                                                <li class="filterItem">
+                                                    <label for="game3Input">Jurassic World</label>
+                                                    <input type="checkbox" id="game3Input" name="game3Input" />
                                                 </li>
-                                                <li class="filter-item">
-                                                    <input type="checkbox" name="spiderman" />
-                                                    <label for="spiderman">Super Heroes</label>
+                                                <li class="filterItem">
+                                                    <label for="game4Input">Super Heroes</label>
+                                                    <input type="checkbox" id="game4Input" name="game4Input" />
                                                 </li>
                                             </ul>
                                         </div>
-
-                                        <div class="filters">
-                                            <h3></h3>
-                                        </div>
-
                                     </div>
                                 </div>
                                 <div class="footer">
-                                    <a class="btn btn-danger" href="#">Lukk</a>
-                                    <a class="btn btn-success" href="#">Bruk</a>
+                                    <a class="btn btnDanger" href="#">Lukk</a>
+                                    <a class="btn btnSuccess" href="#">Bruk</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="content">
-                        <ul class="items webshop-items">
-                            <li class="item webshop-item">
+                        <ul class="items webshopItems">
+                            <li class="item webshopItem">
                                 <div class="content">
                                     <img src="images/webshop/spill_1.jpg" alt="City undercover PS4 Game"/>
                                     <h3>City undercover</h3>
@@ -353,20 +348,19 @@
                                     <span>NOK 189,-</span>
                                 </div>
                                 <div class="footer">
-                                    <div class="lego-brick yellow">
+                                    <div class="legoBrick yellow">
                                         <div class="header">
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
-
                                         </div>
                                         <label>Legg til i handlekurv</label>
                                     </div>
                                 </div>
                             </li>
-                            <li class="item webshop-item">
+                            <li class="item webshopItem">
                                 <div class="content">
                                     <img src="images/webshop/spill_2.jpg" alt="World PS4 Game" />
                                     <h3>Worlds</h3>
@@ -374,20 +368,19 @@
                                     <span>NOK 234,-</span>
                                 </div>
                                 <div class="footer">
-                                    <div class="lego-brick yellow">
+                                    <div class="legoBrick yellow">
                                         <div class="header">
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
-
                                         </div>
                                         <label>Legg til i handlekurv</label>
                                     </div>
                                 </div>
                             </li>
-                            <li class="item webshop-item">
+                            <li class="item webshopItem">
                                 <div class="content">
                                     <img src="images/webshop/spill_3.jpg" alt="Jurassic World PS4 Game" />
                                     <h3>Jurassic World</h3>
@@ -395,20 +388,19 @@
                                     <span>NOK 229,-</span>
                                 </div>
                                 <div class="footer">
-                                    <div class="lego-brick yellow">
+                                    <div class="legoBrick yellow">
                                         <div class="header">
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
-
                                         </div>
                                         <label>Legg til i handlekurv</label>
                                     </div>
                                 </div>
                             </li>
-                            <li class="item webshop-item">
+                            <li class="item webshopItem">
                                 <div class="content">
                                     <img src="images/webshop/spill_4.jpg" alt="Super Hereos PS4 Game" />
                                     <h3>Super Heroes</h3>
@@ -416,14 +408,13 @@
                                     <span>NOK 239,-</span>
                                 </div>
                                 <div class="footer">
-                                    <div class="lego-brick yellow">
+                                    <div class="legoBrick yellow">
                                         <div class="header">
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
-
                                         </div>
                                         <label>Legg til i handlekurv</label>
                                     </div>
@@ -435,13 +426,13 @@
 
                 <section class="category clothing">
                     <div class="header">
-                        <h1>Klær</h1>
+                        <h2>Klær</h2>
 
                         <a class="filter" href="#filterPopup3">
-                            <img class="icon" src="images/webshop/filter_icon.png">
+                            <img class="icon" src="images/webshop/filter_icon.png" alt="Toggle filter">
                         </a>
 
-                        <div id="filterPopup3" class="popup filter-popup">
+                        <div id="filterPopup3" class="popup filterPopup">
                             <div class="content-wrapper">
                                 <div class="header">
                                     <h3>Filtre for klær</h3>
@@ -449,123 +440,115 @@
                                 </div>
                                 <div class="content">
                                     <div class="filters">
-                                        <div class="filter-container">
+                                        <div class="filterContainer">
                                             <h3>Kategori</h3>
-                                            <ul class="filter-items items">
-                                                <li class="filter-item">
-                                                    <input type="checkbox" name="minecraft" />
-                                                    <label for="minecraft">T-skjorte 1</label>
+                                            <ul class="filterItems items">
+                                                <li class="filterItem">
+                                                    <label for="tshirt1Input">T-skjorte 1</label>
+                                                    <input type="checkbox" id="tshirt1Input" name="tshirt1Input" />
                                                 </li>
-                                                <li class="filter-item">
-                                                    <input type="checkbox" name="star_wars" />
-                                                    <label for="star_wars">T-skjorte 2</label>
+
+                                                <li class="filterItem">
+                                                    <label for="tshirt2Input">T-skjorte 2</label>
+                                                    <input type="checkbox" id="tshirt2Input" name="tshirt2Input" />
                                                 </li>
-                                                <li class="filter-item">
-                                                    <input type="checkbox" name="klassisk" />
-                                                    <label for="klassisk">T-skjorte 3</label>
+                                                <li class="filterItem">
+                                                    <label for="tshirt3Input">T-skjorte 3</label>
+                                                    <input type="checkbox" id="tshirt3Input" name="tshirt3Input" />
                                                 </li>
-                                                <li class="filter-item">
-                                                    <input type="checkbox" name="spiderman" />
-                                                    <label for="spiderman">T-skjorte 4</label>
+                                                <li class="filterItem">
+                                                    <label for="tshirt4Input">T-skjorte 4</label>
+                                                    <input type="checkbox" id="tshirt4Input" name="tshirt4Input" />
                                                 </li>
                                             </ul>
                                         </div>
-
-                                        <div class="filters">
-                                            <h3></h3>
-                                        </div>
-
                                     </div>
                                 </div>
                                 <div class="footer">
-                                    <a class="btn btn-danger" href="#">Lukk</a>
-                                    <a class="btn btn-success" href="#">Bruk</a>
+                                    <a class="btn btnDanger" href="#">Lukk</a>
+                                    <a class="btn btnSuccess" href="#">Bruk</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="content">
-                        <ul class="items webshop-items">
-                            <li class="item webshop-item">
+                        <ul class="items webshopItems">
+                            <li class="item webshopItem">
                                 <div class="content">
-                                    <img src="images/webshop/clothing_tshirt.jpg" />
+                                    <img src="images/webshop/clothing_tshirt.jpg" alt="T-skjorte 1" />
                                     <h3>T-skjorte 1</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                     <span>NOK 189,-</span>
                                 </div>
                                 <div class="footer">
-                                    <div class="lego-brick yellow">
+                                    <div class="legoBrick yellow">
                                         <div class="header">
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
-
                                         </div>
                                         <label>Legg til i handlekurv</label>
                                     </div>
                                 </div>
                             </li>
-                            <li class="item webshop-item">
+                            <li class="item webshopItem">
                                 <div class="content">
-                                    <img src="images/webshop/clothing_tshirt_2.jpg" />
+                                    <img src="images/webshop/clothing_tshirt_2.jpg" alt="T-skjorte 2" />
                                     <h3>T-skjorte 2</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                     <span>NOK 234,-</span>
                                 </div>
                                 <div class="footer">
-                                    <div class="lego-brick yellow">
+                                    <div class="legoBrick yellow">
                                         <div class="header">
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
-
                                         </div>
                                         <label>Legg til i handlekurv</label>
                                     </div>
                                 </div>
                             </li>
-                            <li class="item webshop-item">
+                            <li class="item webshopItem">
                                 <div class="content">
-                                    <img src="images/webshop/clothing_tshirt.jpg" />
+                                    <img src="images/webshop/clothing_tshirt.jpg" alt="T-skjorte 3"/>
                                     <h3>T-skjorte 3</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                     <span>NOK 229,-</span>
                                 </div>
                                 <div class="footer">
-                                    <div class="lego-brick yellow">
+                                    <div class="legoBrick yellow">
                                         <div class="header">
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
-
                                         </div>
                                         <label>Legg til i handlekurv</label>
                                     </div>
                                 </div>
                             </li>
-                            <li class="item webshop-item">
+                            <li class="item webshopItem">
                                 <div class="content">
-                                    <img src="images/webshop/clothing_tshirt_2.jpg" />
+                                    <img src="images/webshop/clothing_tshirt_2.jpg" alt="T-skjorte 4" />
                                     <h3>T-skjorte 4</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                     <span>NOK 239,-</span>
                                 </div>
                                 <div class="footer">
-                                    <div class="lego-brick yellow">
+                                    <div class="legoBrick yellow">
                                         <div class="header">
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
                                             <span class="circle"></span>
-
                                         </div>
                                         <label>Legg til i handlekurv</label>
                                     </div>
