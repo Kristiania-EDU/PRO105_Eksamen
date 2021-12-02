@@ -312,6 +312,7 @@ input.search {
     display: flex;
 }
 
+/* Header/Hero */
 header {
     background-image: url(/images/webshop/header.jpg);
     background-size: cover;
