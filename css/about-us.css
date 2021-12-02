@@ -191,8 +191,7 @@ h1 {
  } 
  .imageGallery img:active{
     opacity: 1;
-    width: 450px;
-    height: 350px; 
+    transform: scale(1.5);
 } 
  /* Contact */
  #contactSection{
