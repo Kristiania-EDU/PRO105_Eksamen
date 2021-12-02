@@ -4,7 +4,7 @@
     height: 92.4%;
 }
 
-#btn-miniland{
+.title-div{
     display: flex;
 }
 
@@ -21,7 +21,7 @@
     align-items: flex-start;
     top: 116px;
     position: absolute;
-    width: 1900px;
+    width: 2000px;
     height: 893px;
     overflow: scroll;
     overflow-x: hidden;
