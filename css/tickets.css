@@ -19,7 +19,7 @@ li {
     position: 22;
     justify-content: center;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.219);
+    background-color: #ffffff38;
     background-image: url(/images/Tickets/LegolandGate.jpg);
     /* background-size: 105%; */
     background-repeat: no-repeat;
@@ -42,10 +42,10 @@ li {
     position: absolute;
     width: 400px;
     height: 60%;
-    background-color: rgb(38, 129, 233);
+    background-color: #2681E9;
     left: 150px;
     margin: 0;
-    box-shadow: inset -7px 0px 2px -6px rgb(0, 0, 0); 
+    box-shadow: inset -7px 0px 2px -6px #000000; 
     padding-left: 20px;
     display: flex;
     flex-direction: column;
@@ -55,7 +55,7 @@ li {
 #headerTitle {
     font-family: sans-serif;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: #FFFFFF;
     font-size: 45px;
     border-radius: 15px;
     margin: 0;
@@ -64,15 +64,15 @@ li {
    font-family: sans-serif;
    margin: 0;
    font-size: 12px;
-   color: rgb(0, 0, 0);
+   color: #000000;
 
 }
 #backgroundContainer {
     position: relative;
     flex: 1;
     min-height: 100%;
-    background-color: rgba(255, 255, 255, 0.801);
-    box-shadow: 1px 1px 2px black;
+    background-color: #ffffffcc;
+    box-shadow: 1px 1px 2px #000000;
     display: flex;
     align-self: center;
     align-items: center;
@@ -87,7 +87,7 @@ li {
     position: relative;
     width: 300px; 
     height: 320px; 
-    background-color: rgb(255, 255, 255);
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -181,7 +181,7 @@ li {
     font-weight: 520;
     width: 100%;
     height: 50px;
-    background-color: rgb(54, 147, 253);
+    background-color: #3693FD;
     transform: .2s;
     margin-top: auto;
 }
@@ -194,7 +194,7 @@ li {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.356);
+    background-color: #0000005b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,7 +207,7 @@ li {
     width: 700px;
     height: 500px;
     background-color: white;
-    box-shadow: .5px .5px .5px black;
+    box-shadow: .5px .5px .5px #000000;
     display: flex;
     flex-direction: row;
     z-index: +1;
@@ -226,7 +226,7 @@ li {
     padding-bottom: 1px;
     justify-content: center;
     align-content: center;
-    box-shadow: .5px .5px 3px black;
+    box-shadow: .5px .5px 3px #000000;
 }
 
 
@@ -249,7 +249,7 @@ li {
     height: 20px;
     width: 20px;
     text-decoration: none;
-    color: black;
+    color: #000000;
     font-size: 28px;
 }
 
@@ -288,10 +288,10 @@ li {
     font-size: large;
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: #000000;
     background-color: rgb(54, 147, 253);
-    border: 1px solid black;
-    box-shadow: 1px 1px 1px black;
+    border: 1px solid #000000;
+    box-shadow: 1px 1px 1px #000000;
 
 }
 

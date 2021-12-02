@@ -22,7 +22,7 @@
             <li><a href="about-us.html">Om oss</a></li>
         </ul>
     </nav>
-
+    <!--page header-->
     <header id="banner">
         <div id="bannerTextContainer">
             <h2 id="headerTitle">BILLETTER <br>
@@ -32,8 +32,15 @@
     </header>
 
     <div class="container">
-        <!--Her legger du ditt design-->
-        <div id="backgroundContainer">
+        <!--
+            The ticket page consists of 
+             - containers for background and individual ticket types
+             - buttons for popup window based on ticket type
+             - popup windows with gray screenoverlay
+             - popup windows with numerical dummy-inputs for ticket purchase
+        -->
+        <div id="backgroundContainer"> 
+            <!--Box for ticket type 1-->
             <div class="ticketBuyBox" id="ticketBox1">
                 <div class="adCircle" id="adCircle1">
                     <h3 class="adCircleText">For den spontane!</h3>
@@ -47,6 +54,7 @@
 
                 <a class="button" id="buyTicketBtn" href="#popup1">Finn Billetter</a>                
             </div>
+            <!--Box for ticket type 2-->
             <div class="ticketBuyBox" id="ticketBox2">
                 <div class="adCircle" id="adCircle2">
                     <h3 class="adCircleText">Mest populære!</h3>
@@ -60,6 +68,7 @@
                 
                 <a class="button" id="buyTicketBtn" href="#popup2">Velg Pass</a>
             </div>
+            <!--Box for ticket type 1-->
             <div class="ticketBuyBox" id="ticketBox3">
                 <div class="adCircle" id="adCircle3">
                     <h3 class="adCircleText">For den gavmilde!</h3>
@@ -73,16 +82,10 @@
                 
                 <a class="button" id="buyTicketBtn" href="#popup3">Bestill Gavekort</a>
             </div>
-            <div class="specialTicket">
-
-            </div>
-            <div class="specialTicket">
-
-            </div>
         </div>
     </div>
 
-
+    <!--popup for ticket type 1-->
     <div id="popup1" class="popup">
         <div class="popupContent">
             <div class="titleBox">
@@ -110,6 +113,7 @@
             <a class="popBuyBtn" href="#thanks">Bestill</a>
         </div>
     </div>
+    <!--popup for ticket type 2-->
     <div id="popup2" class="popup">
         <div class="popupContent">
             <div class="titleBox">
@@ -136,6 +140,7 @@
             <a class="popBuyBtn" href="#thanks">Bestill</a>
         </div>
     </div>
+    <!--popup for ticket type 3-->
     <div id="popup3" class="popup">
         <div class="popupContent">
             <div class="titleBox">
@@ -162,6 +167,7 @@
             <a class="popBuyBtn" href="#thanks">Bestill</a>
         </div>
     </div>
+    <!--popup for ticket purchase verification -->
     <div id="thanks" class="popup">
         <div class="popupContent">
             <div class="titleBox">
