@@ -302,7 +302,7 @@ input.search {
     width: 100%;
 }
 
-.summary td:not([scope="row"]) {
+.summary td:not([row]) {
     font-weight: bold;
 }
 

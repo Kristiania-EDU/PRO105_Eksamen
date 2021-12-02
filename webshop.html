@@ -23,18 +23,30 @@
             <li><a href="about-us.html">Om oss</a></li>
         </ul>
 
+        <!--
+            Shoppingcart would in a functional application have items the user
+            choose to purchase.
+
+            The shoppingcart consist of:
+            - Header
+            - List of items
+            - Footer with summary 
+        -->
         <div class="shopping-cart">
-            <img src="/images/webshop/shopping_cart.png" />
+            <img src="/images/webshop/shopping_cart.png" alt="Shoppingcart" />
 
             <div class="content">
+
+                <!--Header-->
                 <div class="header">
                     <h1>Handlekurv</h1>
                 </div>
 
+                <!--List of items-->
                 <ul class="items">
                     <li class="item">
                         <div class="content ">
-                            <img src="images/webshop/starwars_kit.jpg" />
+                            <img src="images/webshop/starwars_kit.jpg" alt="Starwars kit image" />
                             <h3>Starwars</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                             <span>NOK 369,-</span>
@@ -48,7 +60,7 @@
 
                     <li class="item">
                         <div class="content">
-                            <img src="images/webshop/spiderman_kit.jpeg" />
+                            <img src="images/webshop/spiderman_kit.jpeg" alt="Spiderman kit image" />
                             <h3>Spiderman</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                             <span>NOK 456,-</span>
@@ -61,28 +73,44 @@
                     </li>
                 </ul>
 
+                <!--Footer-->
                 <div class="footer">
                     <table class="summary">
                         <tbody>
                             <tr>
-                                <td scope="row">Totalt u/mva</td>
+                                <td row>Totalt u/mva</td>
                                 <td>825,-</td>
                             </tr>
                             <tr>
-                                <td scope="row">Totalt m/mva</td>
+                                <td row>Totalt m/mva</td>
                                 <td>925,-</td>
                             </tr>
                         </tbody>
                     </table>
-
-
                     <span class="btn btn-primary">Fullfør kjøp</span>
                 </div>
             </div>
         </div>
     </nav>
 
+    <!-- 
+        The container consist of the main content on the website.
+        This area is scrollable if content exeeds the screen sice.
+
+        There are to main elements in the container:
+        - A hero/header
+        - A list of catergories containing products
+
+    -->
+
     <div class="container">
+
+        <!-- 
+            Hero contains of three elements:
+            - Header with welcome
+            - Description/motto 
+            - A custom legobrick button for anchoring
+        -->
         <header class="content-container">
             <div class="content">
                 <h1>Velkommen til vår nettbutikk!</h1>
@@ -102,16 +130,29 @@
             </div>
         </header>
 
+        <!--
+            Categories contains a list of different product categories.
+
+            Each category has:
+            - Header
+                - Text 
+                - Filter
+            -  List of products
+                - Image
+                - Title
+                - Short description
+                - Price
+                - Add-To-Shoppingcart-Button
+        -->
         <div id="categories" class="categories content-container">
 
             <div class="content">
-
                 <section id="legoSection" class="lego category">
                     <div class="header">
                         <h1>Pakker med lego</h1>
 
                         <a class="filter" href="#filterPopup1">
-                            <img class="icon" src="images/webshop/filter_icon.png">
+                            <img class="icon" src="images/webshop/filter_icon.png" alt="Toggle filter">
                         </a>
 
                         <div id="filterPopup1" class="popup filter-popup">
@@ -164,7 +205,7 @@
                         <ul class="items webshop-items">
                             <li class="item webshop-item">
                                 <div class="content">
-                                    <img src="images/webshop/starwars_kit.jpg" />
+                                    <img src="images/webshop/starwars_kit.jpg" alt="Starwars kit" />
                                     <h3>Starwars</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                     <span>NOK 369,-</span>
@@ -185,7 +226,7 @@
                             </li>
                             <li class="item webshop-item">
                                 <div class="content">
-                                    <img src="images/webshop/spiderman_kit.jpeg" />
+                                    <img src="images/webshop/spiderman_kit.jpeg" alt="Spiderman kit" />
                                     <h3>Spiderman</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                     <span>NOK 456,-</span>
@@ -206,7 +247,7 @@
                             </li>
                             <li class="item webshop-item">
                                 <div class="content">
-                                    <img src="images/webshop/classic_kit.jpg" />
+                                    <img src="images/webshop/classic_kit.jpg" alt="Classic kit" />
                                     <h3>Klassisk</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                     <span>NOK 249,-</span>
@@ -227,7 +268,7 @@
                             </li>
                             <li class="item webshop-item">
                                 <div class="content">
-                                    <img src="images/webshop/minecraft_kit.jpg" />
+                                    <img src="images/webshop/minecraft_kit.jpg" alt="Minecraft kit"/>
                                     <h3>Minecraft</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                     <span>NOK 334,-</span>
@@ -256,7 +297,7 @@
                         <h1>Spill - PS4</h1>
 
                         <a class="filter" href="#filterPopup2">
-                            <img class="icon" src="images/webshop/filter_icon.png">
+                            <img class="icon" src="images/webshop/filter_icon.png" alt="Toggle filter">
                         </a>
 
                         <div id="filterPopup2" class="popup filter-popup">
@@ -306,7 +347,7 @@
                         <ul class="items webshop-items">
                             <li class="item webshop-item">
                                 <div class="content">
-                                    <img src="images/webshop/spill_1.jpg" />
+                                    <img src="images/webshop/spill_1.jpg" alt="City undercover PS4 Game"/>
                                     <h3>City undercover</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                     <span>NOK 189,-</span>
@@ -327,7 +368,7 @@
                             </li>
                             <li class="item webshop-item">
                                 <div class="content">
-                                    <img src="images/webshop/spill_2.jpg" />
+                                    <img src="images/webshop/spill_2.jpg" alt="World PS4 Game" />
                                     <h3>Worlds</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                     <span>NOK 234,-</span>
@@ -348,7 +389,7 @@
                             </li>
                             <li class="item webshop-item">
                                 <div class="content">
-                                    <img src="images/webshop/spill_3.jpg" />
+                                    <img src="images/webshop/spill_3.jpg" alt="Jurassic World PS4 Game" />
                                     <h3>Jurassic World</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                     <span>NOK 229,-</span>
@@ -369,7 +410,7 @@
                             </li>
                             <li class="item webshop-item">
                                 <div class="content">
-                                    <img src="images/webshop/spill_4.jpg" />
+                                    <img src="images/webshop/spill_4.jpg" alt="Super Hereos PS4 Game" />
                                     <h3>Super Heroes</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, omnis!</p>
                                     <span>NOK 239,-</span>
