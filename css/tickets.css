@@ -253,7 +253,6 @@ li {
 .container {
     width: 100%;
     height: 100%;
-    position: 22;
     justify-content: center;
     position: relative;
     background-color: #ffffff38;
@@ -278,7 +277,6 @@ li {
     width: 100%;
     height: 50px;
     background-color: #3693FD;
-    transform: .2s;
     margin-top: auto;
 }
 
