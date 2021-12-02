@@ -83,6 +83,10 @@ li {
     align-items: center;
 }
 
+/* 
+Ticket boxes 
+*/
+
 .ticketBuyBox {
     position: relative;
     width: 300px; 
@@ -171,24 +175,11 @@ li {
     text-align: center;
 }
 
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 520;
-    width: 100%;
-    height: 50px;
-    background-color: #3693FD;
-    transform: .2s;
-    margin-top: auto;
-}
 
-.button:hover {
-    transform: scale(1.01);
-}
+
+/* 
+    popup windows 
+*/ 
 
 .popup {
     position: absolute;
@@ -228,7 +219,23 @@ li {
     align-content: center;
     box-shadow: .5px .5px 3px #000000;
 }
+.success {
+    width: 250px;
+    height: 250px;
+    align-self: center;
+    justify-self: center;
+    
+}
 
+.popupHead {
+    font-family: sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    display: flex;
+    align-self: center;
+    
+}
 
 #popup1:target {
   visibility: visible;
@@ -242,6 +249,30 @@ li {
 #thanks:target{
     visibility: visible;
 }
+
+/*
+    Buttons and Inputs
+*/
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 520;
+    width: 100%;
+    height: 50px;
+    background-color: #3693FD;
+    transform: .2s;
+    margin-top: auto;
+}
+
+.button:hover {
+    transform: scale(1.01);
+}
+
 .closePopup {
     position: absolute;
     right: 20px;
@@ -253,23 +284,9 @@ li {
     font-size: 28px;
 }
 
-
-
 .quantity {
     height: 20px;
     width: 50px;
-}
-
-
-
-.popupHead {
-    font-family: sans-serif;
-    font-weight: bold;
-    position: absolute;
-    top: 100px;
-    display: flex;
-    align-self: center;
-    
 }
 
 .dateSelection {
@@ -295,10 +312,4 @@ li {
 
 }
 
-.success {
-    width: 250px;
-    height: 250px;
-    align-self: center;
-    justify-self: center;
-    
-}
+
