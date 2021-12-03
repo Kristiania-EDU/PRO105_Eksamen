@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.content-container {
+.contentContainer {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
@@ -40,29 +40,29 @@ input.search {
     margin: 3px;
 }
 
-.btn-success {
+.btnSuccess {
     border: 1px solid var(--green-color);
     color: var(--green-color);
 }
 
-.btn-danger {
+.btnDanger {
     border: 1px solid var(--red-color);
     color: var(--red-color);
 }
 
-.btn-danger:hover {
+.btnDanger:hover {
     background-color: var(--red-color);
     color: var(--white-color);
 }
 
-.btn-success:hover {
+.btnSuccess:hover {
     background-color: var(--green-color);
     color: var(--white-color);
 }
 
 
 /* Legobrick */
-.lego-brick {
+.legoBrick {
     width: 150px;
     height: 38px;
     position: relative;
@@ -76,11 +76,11 @@ input.search {
     text-decoration: none;
 }
 
-.lego-brick * {
+.legoBrick * {
     cursor: pointer;
 }
 
-.lego-brick .header {
+.legoBrick .header {
     position: absolute;
     top: -10px;
     margin-left: auto;
@@ -92,61 +92,61 @@ input.search {
     overflow: hidden;
 }
 
-.lego-brick .header .circle {
+.legoBrick .header .circle {
     width: 20px;
     height: 35px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
 
-.lego-brick .header .circle:not(:last-child) {
+.legoBrick .header .circle:not(:last-child) {
     margin-right: 5px;
 }
 
-.lego-brick:hover {
+.legoBrick:hover {
     background-color: var(--yellow-color);
 }
 
-.lego-brick:hover > .header .circle {
+.legoBrick:hover > .header .circle {
     background-color: var(--yellow-color);
 }
 
-.lego-brick.transparent,
-.lego-brick.transparent .header .circle {
+.legoBrick.transparent,
+.legoBrick.transparent .header .circle {
     background-color: transparent;
     border: 1px solid var(--white-color);
     color: var(--white-color);
 }
 
-.lego-brick.transparent:hover,
-.lego-brick.transparent:hover .header .circle {
+.legoBrick.transparent:hover,
+.legoBrick.transparent:hover .header .circle {
     background-color: var(--white-color);
     border: none;
     color: var(--black-color);
 }
 
-.lego-brick.red,
-.lego-brick.red .header .circle {
+.legoBrick.red,
+.legoBrick.red .header .circle {
     background-color: var(--red-color);
 }
 
-.lego-brick.red:hover,
-.lego-brick.red:hover .header .circle {
+.legoBrick.red:hover,
+.legoBrick.red:hover .header .circle {
     background-color: var(--yellow-color);
 }
 
-.lego-brick.yellow,
-.lego-brick.yellow .header .circle {
+.legoBrick.yellow,
+.legoBrick.yellow .header .circle {
     background-color: var(--yellow-color);
 }
 
-.lego-brick.yellow:hover,
-.lego-brick.yellow:hover .header .circle {
+.legoBrick.yellow:hover,
+.legoBrick.yellow:hover .header .circle {
     background-color: var(--green-color);
 }
 
-.lego-brick.green,
-.lego-brick.green .header .circle {
+.legoBrick.green,
+.legoBrick.green .header .circle {
     background-color: var(--green-color);
 }
 
@@ -155,7 +155,6 @@ input.search {
 /* Popup */
 .popup {
     position: fixed;
-    /* visibility: hidden;  */
     opacity: 0;    
     background-color: rgba(0, 0, 0, .45);
     height: 100%;
@@ -168,11 +167,10 @@ input.search {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -10;
+    z-index: -1;
 }
 
 .popup:target {
-    visibility: visible; /* Ikke lov*/
     opacity: 1;
     z-index: 10;
 }
@@ -207,26 +205,26 @@ input.search {
 }
 
 /* Filtering */
-.filter-container {
+.filterContainer {
     display: flex;
     flex-direction: column;
 }
 
-.filter-container h3 {
+.filterContainer h3 {
     padding: .5em;
     border-bottom: 1px solid #dfdfdf;
 }
 
-.filter-container .filter-items {
+.filterContainer .filterItems {
     flex-direction: column;
     padding: .5em;
 }
 
-.filter-item {
+.filterItem {
     display: flex;
 }
 
-.filter-item > *:not(:last-child) {
+.filterItem > *:not(:last-child) {
     margin-right: 5px;
 }
 
@@ -268,7 +266,7 @@ input.search {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, .15) 2px 5px 9px 4px;
     overflow: hidden;
-    max-height: 90vh; /* Ikke lov*/
+    max-height: 90vh; 
 }
 
 .shopping-cart .items {
@@ -283,7 +281,7 @@ input.search {
     width: 250px;
 }
 
-.shopping-cart .webshop-item img {
+.shopping-cart .webshopItem img {
     width: 80%;
 }
 
@@ -291,18 +289,19 @@ input.search {
     flex-direction: column;
 }
 
-.shopping-cart > .content > .footer .btn-primary {
+.shopping-cart > .content > .footer .btnPrimary {
     background-color: var(--yellow-color);
     border: none;
     color: var(--black-color);
     margin-top: 10px;
+    text-align: center;
 }
 
-.item-counter input {
+.itemCounter input {
     width: 100%;
 }
 
-.summary td:not([scope="row"]) {
+.summary td:not([row]) {
     font-weight: bold;
 }
 
@@ -313,6 +312,7 @@ input.search {
     display: flex;
 }
 
+/* Header/Hero */
 header {
     background-image: url(/images/webshop/header.jpg);
     background-size: cover;
@@ -332,8 +332,7 @@ header .content {
     background-color: rgba(0, 0, 0, 0.45);
 }
 
-header .lego-brick {
-    text-transform: uppercase; /*IKKE LOV*/
+header .legoBrick {
     width: 250px;
     height: 50px;
     margin-top: 10px;
@@ -351,7 +350,6 @@ header p {
 
 header .cta {
     padding: .7em 1em;
-    text-transform: uppercase; /*IKKE LOV*/
     font-size: bold;
     color: #fff;
     border: 1px solid #fff;
@@ -376,7 +374,7 @@ header .cta:hover {
     margin: 1em 0;
 }
 
-.category h1 {
+.category h2 {
     margin-bottom: .4em; 
 }
 
@@ -395,7 +393,7 @@ header .cta:hover {
 }
 
 .items {
-    list-style: none; /* IKKE LOV */
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -412,14 +410,14 @@ header .cta:hover {
 
 /* Webshop item */
 
-.webshop-item {
+.webshopItem {
     cursor: pointer;
     width: 290px;    
     min-width: 290px;
     flex-basis: 22%;
 }
 
-.webshop-items .item:hover {
+.webshopItems .item:hover {
     box-shadow: 
     rgba(99, 99, 99, 0.2) 0px 2px 18px 5px,
         rgba(255, 207, 0, .2) 0px 5px, 
@@ -428,13 +426,13 @@ header .cta:hover {
         rgba(255, 207, 0, .05) 0px 20px;
 }
 
-.webshop-item .footer {
+.webshopItem .footer {
     margin-top: 0;
     padding: .5em;
     padding-top: 1em;
 }
 
-.webshop-item .footer button {
+.webshopItem .footer button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -444,16 +442,16 @@ header .cta:hover {
     border: none;
 }
 
-.webshop-item .footer button img {
+.webshopItem .footer button img {
     width: 25px;
     margin-right: 10px;
 }
 
-.webshop-item .lego-brick {
+.webshopItem .legoBrick {
     width: 100%;
 }
 
-.webshop-item .lego-brick img {
+.webshopItem .legoBrick img {
     width: 25px;
 }
 
