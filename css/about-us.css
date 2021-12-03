@@ -207,6 +207,7 @@ h1 {
   .imageGallery img:hover{
     opacity: 1;
     cursor: zoom-in;
+    z-index: 3;
  } 
 
  .imageGallery img:active{
