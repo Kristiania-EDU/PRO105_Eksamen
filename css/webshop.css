@@ -150,8 +150,6 @@ input.search {
     background-color: var(--green-color);
 }
 
-
-
 /* Popup */
 .popup {
     position: fixed;
@@ -365,6 +363,7 @@ header .cta:hover {
     color: black;
 }
 
+/* Product Categories */
 .categories {
     height: 100%;
     padding-top: 30px;
@@ -420,10 +419,10 @@ header .cta:hover {
 .webshopItems .item:hover {
     box-shadow: 
     rgba(99, 99, 99, 0.2) 0px 2px 18px 5px,
-        rgba(255, 207, 0, .2) 0px 5px, 
-        rgba(255, 207, 0, .15) 0px 10px, 
-        rgba(255, 207, 0, .1) 0px 15px, 
-        rgba(255, 207, 0, .05) 0px 20px;
+    rgba(255, 207, 0, .2) 0px 5px, 
+    rgba(255, 207, 0, .15) 0px 10px, 
+    rgba(255, 207, 0, .1) 0px 15px, 
+    rgba(255, 207, 0, .05) 0px 20px;
 }
 
 .webshopItem .footer {
