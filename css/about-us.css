@@ -213,6 +213,7 @@ h1 {
  .imageGallery img:active{
     opacity: 1;
     transform: scale(1.5);
+    z-index: 999;
 } 
 
  /* Contact */
