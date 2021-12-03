@@ -4,14 +4,18 @@ body{
     background-repeat: repeat-y;
     background-size: cover; 
 }
+
 .container{
     overflow: hidden;
 }
+
 .bannerImg{
     display: flex;
     width: 100%;
     height: 1000px;
 }
+
+
 #anchor{
     justify-content: center;
     text-align: center;
@@ -21,6 +25,7 @@ body{
     background-color: #ffd103;
     width: 110%;
 }
+
 /* Start page */
 header{
     background-image: url(/images/aboutUs/headerau.jpg);
@@ -31,6 +36,7 @@ header{
     height: 37%;
     top: 0px;
 }
+
 #quote{
     font-style: italic;
     font-size: 60px;
@@ -45,12 +51,14 @@ header{
     transition-duration: 3s;
     transition-timing-function: ease-in-out;
 }
+
 #quote:hover{
     font-size: 70px;
     text-shadow: 5px 3px rgb(124, 108, 108);
     color: green;
     cursor: pointer;
 }
+
 /* About legoland history */
 #historySection{
     background-image: url(/images/aboutUs/historyBanner.jpg);
@@ -61,6 +69,7 @@ header{
     height: 1000px;
     top: 0px;
 }
+
 .historyText{
     font-style: italic; 
     font-size: 17px;
@@ -79,6 +88,7 @@ header{
     width: 800px;
     height: 500px;
 }
+
 /* About park locations */
 #locationsSection{
     background-image: url(/images/aboutUs/locationsHeader.jpg);
@@ -89,6 +99,7 @@ header{
     height: 1000px;
     top: 0px;
 }
+
 .locationsText{
     font-style: italic; 
     font-size: 18px;
@@ -108,6 +119,7 @@ header{
     width: 800px;
     height: 515px;
 }
+
 /* Picture gallery */
 #gallerySection{
     background-image: url(/images/aboutUs/galleryheader.jpg);
@@ -118,6 +130,7 @@ header{
     height: 1000px;
     top: 0px;
 }
+
 .textBubble{
     background-image: url(/images/aboutUs/textbubble.png);
     position: relative;
@@ -137,9 +150,11 @@ header{
     left: 1150px; 
     transform: scaleX(-1);
 }
+
 h1 {
     transform: scaleX(-1); 
 } 
+
 #legoPerson{
     position: relative;
     width: 290px;
@@ -151,6 +166,7 @@ h1 {
     animation-iteration-count: infinite;
     animation-delay: 3s;
 }
+
 @keyframes legoGuy{
     0%{ 
     }
@@ -160,6 +176,7 @@ h1 {
     100%{
     }
 } 
+
 .imageGallery{
     display: flex;
     flex-wrap: wrap;
@@ -173,6 +190,7 @@ h1 {
     width: 900px;
     height: 600px;
 }
+
 .imageGallery img{
     width: 300px;
     height: 200px;
@@ -185,15 +203,19 @@ h1 {
     margin-bottom: 15px;
     position: relative;
  }
+ 
   .imageGallery img:hover{
     opacity: 1;
     cursor: zoom-in;
+    z-index: 3;
  } 
+
  .imageGallery img:active{
     opacity: 1;
-    width: 450px;
-    height: 350px; 
+    transform: scale(1.5);
+    z-index: 999;
 } 
+
  /* Contact */
  #contactSection{
     background-image: url(/images/aboutUs/legohelp.jpg);
@@ -204,6 +226,7 @@ h1 {
     height: 1000px;
     top: -10px;
 }
+
 .contactText{
     font-style: italic; 
     font-size: 25px;
@@ -215,6 +238,7 @@ h1 {
     right: 600px;
     left: 50px;
 }
+
 #legoHead{
     position: relative;
     left: 930px;
@@ -224,6 +248,7 @@ h1 {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
+
 @keyframes legoSpin{
     0%{
     }

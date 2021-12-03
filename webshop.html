@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
 
  <!--
-    Webshop 
-
-    - There are some places i would have liked to used things like:
-        ul, li, etc. But because of css-properties i've had to make it 
+    Author: Sebastian Nordby
+    Page: Webshop   
+    Note: Proof of concept markup without functionality
 -->
 
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +17,6 @@
 </head>
 
 <body>
-
     <nav>
         <img alt="Legoland logo" class="logo" src="images/logo.png" />
  
@@ -145,12 +142,13 @@
             - Header
                 - Text 
                 - Filter
-            -  List of products
-                - Image
-                - Title
-                - Short description
-                - Price
-                - Add-To-Shoppingcart-Button
+            -  List of products, CssClass: webshopItems
+                - Product-item, CssClass: webshopItem
+                    - Image
+                    - Title
+                    - Short description
+                    - Price
+                    - Add-To-Shoppingcart-Button            
         -->
         <div id="categories" class="categories contentContainer">
 
@@ -163,6 +161,12 @@
                             <img class="icon" src="images/webshop/filter_icon.png" alt="Toggle filter">
                         </a>
 
+                        <!-- 
+                            Simple filter-popup for sorting by categories.
+
+                            Note: 
+                                Changes made in the filter popup does not get applied because lack of scripting.
+                        -->
                         <div id="filterPopup1" class="popup filterPopup">
                             <div class="content-wrapper">
                                 <div class="header">
