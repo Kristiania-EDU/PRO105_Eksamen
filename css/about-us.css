@@ -20,7 +20,7 @@ body{
     justify-content: center;
     text-align: center;
     position: relative;
-    color: gray;
+    color: #7C6C6C;
     font-size: 13px;
     background-color: #ffd103;
     width: 110%;
@@ -40,8 +40,8 @@ header{
 #quote{
     font-style: italic;
     font-size: 60px;
-    color: rgb(255, 255, 255); 
-    text-shadow: 3px 2px rgb(124, 108, 108); 
+    color: #FFFFFF; 
+    text-shadow: 3px 2px #7C6C6C; 
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -54,8 +54,8 @@ header{
 
 #quote:hover{
     font-size: 70px;
-    text-shadow: 5px 3px rgb(124, 108, 108);
-    color: green;
+    text-shadow: 5px 3px #7C6C6C;
+    color: #006400;
     cursor: pointer;
 }
 
@@ -73,8 +73,8 @@ header{
 .historyText{
     font-style: italic; 
     font-size: 17px;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px rgb(124, 108, 108);
+    color: #FFFFFF;
+    text-shadow: 1px 1px #7C6C6C;
     line-height: 1.6;
     padding: 120px;
     text-align: center; 
@@ -103,8 +103,8 @@ header{
 .locationsText{
     font-style: italic; 
     font-size: 18px;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px rgb(124, 108, 108); 
+    color: #FFFFFF;
+    text-shadow: 1px 1px #7C6C6C; 
     line-height: 1.4;
     position: relative;  
     padding: 130px;
@@ -136,8 +136,8 @@ header{
     position: relative;
     font-style: italic; 
     font-size: 12px;
-    color: rgb(0, 0, 0);
-    text-shadow: 1px 1px rgb(124, 108, 108);
+    color: #000000;
+    text-shadow: 1px 1px #7C6C6C;
     text-align: center; 
     background-repeat: no-repeat;
     background-position: center; 
@@ -195,7 +195,7 @@ h1 {
     width: 300px;
     height: 200px;
     border-radius: 5%;
-    box-shadow: 5px 6px rgb(12, 12, 12);
+    box-shadow: 5px 6px #000000;
     opacity: 0.3;
     z-index: 1;
     margin: 10px;
@@ -231,7 +231,7 @@ h1 {
     font-style: italic; 
     font-size: 25px;
     color: #FFCF00;
-    text-shadow: 1px 1px rgb(124, 108, 108); 
+    text-shadow: 1px 1px #7C6C6C; 
     line-height: 1.4;
     position: relative;  
     top: 200px;
