@@ -2,6 +2,9 @@
  <!--
     Author: Sebastian Nordby
     Page: Webshop   
+
+    Note: Because this assignment is without script many fuctions
+        are not implemented and should be views as a proof-of-concept solution.
 -->
 
 <!DOCTYPE html>
@@ -141,12 +144,13 @@
             - Header
                 - Text 
                 - Filter
-            -  List of products
-                - Image
-                - Title
-                - Short description
-                - Price
-                - Add-To-Shoppingcart-Button
+            -  List of products, CssClass: webshopItems
+                - Product-item, CssClass: webshopItem
+                    - Image
+                    - Title
+                    - Short description
+                    - Price
+                    - Add-To-Shoppingcart-Button            
         -->
         <div id="categories" class="categories contentContainer">
 
@@ -159,6 +163,12 @@
                             <img class="icon" src="images/webshop/filter_icon.png" alt="Toggle filter">
                         </a>
 
+                        <!-- 
+                            Simple filter-popup for sorting by categories.
+
+                            Note: 
+                                Changes made in the filter popup does not get applied because lack of scripting.
+                        -->
                         <div id="filterPopup1" class="popup filterPopup">
                             <div class="content-wrapper">
                                 <div class="header">
